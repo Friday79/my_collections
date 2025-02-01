@@ -2,6 +2,6 @@ from django.shortcuts import render
 
 # Create your views here.
 def index(request):
-    *** creating views for index ***
-    
+    """ created views to return the index page """
+
     return render(request, 'home/index.htnl')
