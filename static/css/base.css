@@ -6,7 +6,7 @@ body {
     background: url('/media/homepage_background_cropped1.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
-    color: gray;
+    color: #555;
     font-family: 'Lato';
 }
 
@@ -15,7 +15,7 @@ body {
     align-items: center;
     display: inline-flex;
     justify-content: center;
-    height: 1.2rem;
+    height: 1.5rem;
     width: 1.5rem;
 }
 
@@ -79,7 +79,7 @@ body {
 	left: 0;
 	position: fixed;
 	background: white;
-	z-index: -2;
+	z-index: -1;
 }
 
 a.category-badge > span.badge:hover {
@@ -94,10 +94,80 @@ a.category-badge > span.badge:hover {
     bottom: 10px;
     right: 10px;
 }
+
 .btt-link,
 .update-link,
 .remove-item {
     cursor: pointer;
+}
+
+/* ------------------------------- bootstrap toasts */
+
+.message-container {
+    position: fixed;
+    top: 72px;
+    right: 15px;
+    z-index: 99999999999;
+}
+
+.custom-toast {
+    overflow: visible;
+}
+
+.toast-capper {
+    height: 2px;
+}
+
+/* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
+
+.arrow-up {
+    width: 0; 
+    height: 0; 
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent; 
+    border-bottom: 10px solid black;
+    position: absolute;
+    top: -10px;
+    right: 36px;
+}
+
+/* Convenience classes - colors copied from Bootstrap */
+.arrow-primary {
+    border-bottom-color: #007bff !important;
+}
+
+.arrow-secondary {
+    border-bottom-color: #6c757d !important;
+}
+
+.arrow-success {
+    border-bottom-color: #28a745 !important;
+}
+
+.arrow-danger {
+    border-bottom-color: #dc3545 !important;
+}
+
+.arrow-warning {
+    border-bottom-color: #ffc107 !important;
+}
+
+.arrow-info {
+    border-bottom-color: #17a2b8 !important;
+}
+
+.arrow-light {
+    border-bottom-color: #f8f9fa !important;
+}
+
+.arrow-dark {
+    border-bottom-color: #343a40 !important;
+}
+
+.bag-notification-wrapper {
+    height: 100px;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 
