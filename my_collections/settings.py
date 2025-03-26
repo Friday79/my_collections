@@ -177,6 +177,8 @@ STRIPE_CURRENCY = 'usd'
 STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', 'pk_test_51R5BR0DChiXygMGLe3YdctIK2yeuqgp8CutEvhBwnffVlf4JDHhtycFkYtTxgzWa31menR2WXQt56F2Tbp1b6zbl008eimZtqx')
 STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', 'sk_test_51R5BR0DChiXygMGL0fcCiPpuEzBtOP6WO2RxTjR3VPhFrHQLm1NEZ5fRymrvf1lcjKzk98Egt3DhNYvtDTHD22md002nvCbjhY')
 STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
+DEFAULT_FROM_EMAIL = 'my_colletions@example.com'
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
