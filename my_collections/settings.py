@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 from pathlib import Path
 import os
+from urllib.parse import urlparse
+import dj_database_url
 if os.path.isfile('env.py'):
     import env
 
@@ -23,12 +25,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-k#7065+^)fz!8h=k5mq6^#+iapv=55zjdg!6qn&rhm%fs)6y64'
+SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'https://mycollections-379ea5dbbc8f.herokuapp.com/']
 
 
 # Application definition
@@ -121,10 +123,32 @@ WSGI_APPLICATION = 'my_collections.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
+#DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.sqlite3',
+#        'NAME': BASE_DIR / 'db.sqlite3',
+#    }
+#}
+
+DATABASES = {
+     'default': dj_database_url.parse('postgresql://neondb_owner:gIbtL2ETMm6N@ep-icy-voice-a27hrqt6.eu-central-1.aws.neon.tech/thumb_acre_smile_252792')
+}
+
+DATABASE_URL = os.getenv('DATABASE_URL', 'postgresql://neondb_owner:gIbtL2ETMm6N@ep-icy-voice-a27hrqt6.eu-central-1.aws.neon.tech/thumb_acre_smile_252792?options=endpoint%3Dep-icy-voice-a27hrqt6')
+
+url = urlparse(DATABASE_URL)
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': url.path[1:],  # Skips the leading '/'
+        'USER': url.username,
+        'PASSWORD': url.password,
+        'HOST': url.hostname,
+        'PORT': url.port or 5432,
+        'OPTIONS': {
+            'sslmode': 'require',  # Ensures secure connection
+        },
     }
 }
 
