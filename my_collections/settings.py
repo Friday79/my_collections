@@ -12,10 +12,10 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 from pathlib import Path
 import os
-from urllib.parse import urlparse
 import dj_database_url
+from urllib.parse import urlparse 
 if os.path.isfile('env.py'):
-    import env
+    import env # flake8 will throw an error here, but it is necessary to import env.py
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -28,9 +28,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'Justinafr1!'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1',]
+ALLOWED_HOSTS = [
+    '127.0.0.1', # vs code preview
+    'localhost', # listen for stripe webhooks
+]
 
 
 # Application definition
@@ -46,6 +49,7 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
+
     'home',
     'products',
     'bag',
@@ -55,6 +59,7 @@ INSTALLED_APPS = [
     # Other
     'crispy_forms',
 ]
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
