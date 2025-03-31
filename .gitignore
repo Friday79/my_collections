@@ -8,3 +8,7 @@ node_modules/
 .github/
 cloudinary_python.txt
 *.sqlite3
+venv
+my_env
+media
+static
