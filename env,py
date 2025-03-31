@@ -1,5 +1,0 @@
-import os
-
-os.environ.setdefault("STRIPE_PUBLIC_KEY", "pk_test_51R5BR0DChiXygMGLe3YdctIK2yeuqgp8CutEvhBwnffVlf4JDHhtycFkYtTxgzWa31menR2WXQt56F2Tbp1b6zbl008eimZtqx")
-os.environ.setdefault('SECRET_KEY', 'Justinafr1!')
-DATABASE_URL = 'postgresql://neondb_owner:gIbtL2ETMm6N@ep-icy-voice-a27hrqt6.eu-central-1.aws.neon.tech/flip_etch_limb_420641'
