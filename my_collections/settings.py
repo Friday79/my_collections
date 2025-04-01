@@ -25,10 +25,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'Justinafr1!'
+SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = [
     '127.0.0.1', # vs code preview
@@ -56,6 +56,9 @@ INSTALLED_APPS = [
     'bag',
     'checkout',
     'profiles',
+    'cloudinary_storage',
+    'cloudinary',
+    'django.contrib.staticfiles',
 
     # Other
     'crispy_forms',
@@ -70,6 +73,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'my_collections.urls'
@@ -126,35 +130,33 @@ WSGI_APPLICATION = 'my_collections.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
-
-#DATABASES = {
-#    'default': {
-#        'ENGINE': 'django.db.backends.sqlite3',
-#        'NAME': BASE_DIR / 'db.sqlite3',
-#    }
-#}
-
 DATABASES = {
-     'default': dj_database_url.parse('postgresql://neondb_owner:gIbtL2ETMm6N@ep-icy-voice-a27hrqt6.eu-central-1.aws.neon.tech/thumb_acre_smile_252792')
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
 }
 
+#DATABASES = {
+#     'default': dj_database_url.parse('postgresql://neondb_owner:gIbtL2ETMm6N@ep-icy-voice-a27hrqt6.eu-central-1.aws.neon.tech/thumb_acre_smile_252792')
+#}
 DATABASE_URL = os.getenv('DATABASE_URL', 'postgresql://neondb_owner:gIbtL2ETMm6N@ep-icy-voice-a27hrqt6.eu-central-1.aws.neon.tech/thumb_acre_smile_252792?options=endpoint%3Dep-icy-voice-a27hrqt6')
 
 url = urlparse(DATABASE_URL)
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': url.path[1:],  # Skips the leading '/'
-        'USER': url.username,
-        'PASSWORD': url.password,
-        'HOST': url.hostname,
-        'PORT': url.port or 5432,
-        'OPTIONS': {
-            'sslmode': 'require',  # Ensures secure connection
-        },
-    }
-}
+#DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.postgresql',
+#        'NAME': url.path[1:],  # Skips the leading '/'
+#        'USER': url.username,
+#        'PASSWORD': url.password,
+#        'HOST': url.hostname,
+#        'PORT': url.port or 5432,
+#        'OPTIONS': {
+#            'sslmode': 'require',  # Ensures secure connection
+#        },
+#    }
+#}
 
 
 # Password validation
@@ -199,6 +201,11 @@ STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 
 # WhiteNoise Storage
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+
+# Cloudinary Settings for Media Files
+CLOUDINARY_URL = os.getenv('CLOUDINARY_URL')
+
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
