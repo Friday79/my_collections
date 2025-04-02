@@ -31,9 +31,9 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    '127.0.0.1', # vs code preview
-    'localhost', # listen for stripe webhooks
     'mycollections-379ea5dbbc8f.herokuapp.com',
+    '127.0.0.1', # vs code preview
+    'localhost', # listen for stripe webhooks 
 ]
 
 
@@ -45,21 +45,19 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'cloudinary_storage',
     'django.contrib.staticfiles',
+    'cloudinary',
     'django.contrib.sites',
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
-
+    
     'home',
     'products',
     'bag',
     'checkout',
-    'profiles',
-    'cloudinary_storage',
-    'cloudinary',
-
-    # Other
+    'profiles', 
     'crispy_forms',
 ]
 
@@ -196,18 +194,14 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-
-# WhiteNoise Storage
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles') 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
-# Cloudinary Settings for Media Files
-CLOUDINARY_URL = os.getenv('CLOUDINARY_URL')
-
-DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+CLOUDINARY_URL = os.getenv('CLOUDINARY_URL')
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 FREE_DELIVERY_THRESHOLD = 75
 STANDARD_DELIVERY_PERCENTAGE = 10
