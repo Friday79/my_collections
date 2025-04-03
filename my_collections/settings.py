@@ -137,23 +137,35 @@ WSGI_APPLICATION = 'my_collections.wsgi.application'
 #DATABASES = {
 #     'default': dj_database_url.parse('postgresql://neondb_owner:gIbtL2ETMm6N@ep-icy-voice-a27hrqt6.eu-central-1.aws.neon.tech/thumb_acre_smile_252792')
 #}
-DATABASE_URL = os.getenv('DATABASE_URL', 'postgresql://neondb_owner:gIbtL2ETMm6N@ep-icy-voice-a27hrqt6.eu-central-1.aws.neon.tech/thumb_acre_smile_252792?options=endpoint%3Dep-icy-voice-a27hrqt6')
+#DATABASE_URL = os.getenv('DATABASE_URL', 'postgresql://neondb_owner:gIbtL2ETMm6N@ep-icy-voice-a27hrqt6.eu-central-1.aws.neon.tech/thumb_acre_smile_252792?options=endpoint%3Dep-icy-voice-a27hrqt6')
 
-url = urlparse(DATABASE_URL)
+#url = urlparse(DATABASE_URL)
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': url.path[1:],  # Skips the leading '/'
-        'USER': url.username,
-        'PASSWORD': url.password,
-        'HOST': url.hostname,
-        'PORT': url.port or 5432,
-        'OPTIONS': {
-            'sslmode': 'require',  # Ensures secure connection
-        },
+#DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.postgresql',
+#        'NAME': url.path[1:],  # Skips the leading '/'
+#        'USER': url.username,
+#        'PASSWORD': url.password,
+#        'HOST': url.hostname,
+#        'PORT': url.port or 5432,
+#        'OPTIONS': {
+#            'sslmode': 'require',  # Ensures secure connection
+#        },
+#    }
+#}
+
+if 'DATABASE_URL' in os.environ:
+    DATABASES = {
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
     }
-}
+else: 
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': BASE_DIR / 'db.sqlite3',
+        }
+    }
 
 
 # Password validation
