@@ -327,3 +327,10 @@ input[name='q']::placeholder {
         padding: .25rem .5rem !important;
     }
 }
+
+/*mailchimp styling*/
+#mc_embed_signup{
+    background:darkblack; 
+    clear:left; 
+    font:14px; 
+    width: 600px;}
