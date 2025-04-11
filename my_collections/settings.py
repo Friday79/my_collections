@@ -36,7 +36,7 @@ ALLOWED_HOSTS = [
     'localhost', # listen for stripe webhooks 
 ]
 
-X_FRAME_OPTIONS = 'ALLOWALL'
+
 
 
 # Application definition
