@@ -38,7 +38,7 @@
     crossorigin="anonymous"></script>
   <!-- Stripe -->
   <script src="https://js.stripe.com/v3/"></script>
-  <script src="https://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+  
 
   {% endblock %}
 
@@ -158,15 +158,7 @@
   <script type="text/javascript">
     $('.toast').toast('show');
   </script>
-  <script type="text/javascript">
-    (function($) {
-      window.fnames = new Array(); 
-      window.ftypes = new Array();
-      fnames[0] = 'EMAIL'; ftypes[0] = 'email';
-    }(jQuery));
-    var $mcj = jQuery.noConflict(true);
-  </script>
-
+ 
   {% endblock %}
 
   {% include 'includes/footer.html' %}
