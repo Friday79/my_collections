@@ -15,7 +15,7 @@ import os
 import dj_database_url
 from urllib.parse import urlparse 
 if os.path.isfile('env.py'):
-    import env # flake8 will throw an error here, but it is necessary to import env.py
+   import env # flake8 will throw an error here, but it is necessary to import env.py
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent

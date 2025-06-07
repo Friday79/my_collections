@@ -1,0 +1,20 @@
+# robots.txt for My_Collections eCommerce site
+
+User-agent: *
+# Allow all public pages
+Allow: /
+
+# Disallow admin and authentication pages
+Disallow: /admin/
+Disallow: /accounts/
+Disallow: /checkout/
+Disallow: /bag/
+Disallow: /profile/
+
+# Block duplicate or sensitive URLs
+Disallow: /*?q=*
+Disallow: /*add_to_bag=*
+Disallow: /*remove=*
+
+# Sitemap location
+Sitemap: https://mycollections-379ea5dbbc8f.herokuapp.com/sitemap.xml
