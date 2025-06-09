@@ -79,7 +79,7 @@ def product_detail(request, product_id):
                 return redirect('product_detail', product_id=product.id)
         else:
             messages.error(request, "You need to log in to submit a review.")
-            return redirect('login')
+            return redirect('account_login')
 
 
     context = {
