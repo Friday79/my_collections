@@ -58,6 +58,16 @@ In the bag we will see all the product we have added to the bag,then we can edit
 - ## Agile method
 - ![image](https://github.com/user-attachments/assets/490dc086-d1f8-41c0-b267-3658019c60b7)
 - ![image](https://github.com/user-attachments/assets/a97ea7fb-7c66-4159-aa58-ac3f52c0a43b)
+- ![image](https://github.com/user-attachments/assets/63bce6f9-04a9-41db-ae70-13e6d5702633)
+- ![image](https://github.com/user-attachments/assets/6de86413-99a5-4197-8704-b85d3a2fda01)
+- ![image](https://github.com/user-attachments/assets/7419daaa-d4c0-4a2b-a5f8-0c4106dd96d1)
+- ![image](https://github.com/user-attachments/assets/7da69a55-4f2c-42ee-80c2-524818c46f7c)
+- ![image](https://github.com/user-attachments/assets/124726d3-ae09-4f7d-ab0d-a73d99ce2405)
+
+
+
+
+
 
 
 - ## jshint Stripe testing
