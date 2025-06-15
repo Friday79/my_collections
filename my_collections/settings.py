@@ -251,8 +251,8 @@ if 'USE_AWS' in os.environ:
     }
     
     # Bucket Config
-    AWS_STORAGE_BUCKET_NAME = 'mycollections1-vscode-bucket' # change this to your AWS bucket name
-    AWS_S3_REGION_NAME = 'eu-north-1'
+    AWS_STORAGE_BUCKET_NAME = 'mycollections1' # change this to your AWS bucket name
+    AWS_S3_REGION_NAME = 'Europe (Stockholm) eu-north-1'
     AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
     AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
     AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
@@ -263,16 +263,13 @@ if 'USE_AWS' in os.environ:
 
     MEDIAFILES_LOCATION = 'media'
 
-    STATICFILES_STORAGE = 'custom_storages.StaticStorage'
 
-    DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
-
-#    STORAGES = {
-#        'default': {
-#            'BACKEND': 'custom_storages.MediaStorage',
-#        },
-#        'staticfiles': {'BACKEND': 'custom_storages.StaticStorage'},
-#    }
+    STORAGES = {
+        'default': {
+            'BACKEND': 'custom_storages.MediaStorage',
+        },
+        'staticfiles': {'BACKEND': 'custom_storages.StaticStorage'},
+    }
 
     # Override static and media URLs in production
     STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
