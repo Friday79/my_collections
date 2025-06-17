@@ -63,6 +63,7 @@ INSTALLED_APPS = [
     'crispy_forms',
     'crispy_bootstrap4',
     'storages',
+    'contact',
 ]
 
 STATICFILES_FINDERS = [
