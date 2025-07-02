@@ -136,35 +136,7 @@ LOGIN_REDIRECT_URL = '/'
 WSGI_APPLICATION = 'my_collections.wsgi.application'
 
 
-# Database
-# https://docs.djangoproject.com/en/3.2/ref/settings/#databases
-#DATABASES = {
-#    'default': {
-#        'ENGINE': 'django.db.backends.sqlite3',
-#        'NAME': BASE_DIR / 'db.sqlite3',
-#    }
-#}
 
-#DATABASES = {
-#     'default': dj_database_url.parse('postgresql://neondb_owner:gIbtL2ETMm6N@ep-icy-voice-a27hrqt6.eu-central-1.aws.neon.tech/thumb_acre_smile_252792')
-#}
-#DATABASE_URL = os.getenv('DATABASE_URL', 'postgresql://neondb_owner:gIbtL2ETMm6N@ep-icy-voice-a27hrqt6.eu-central-1.aws.neon.tech/thumb_acre_smile_252792?options=endpoint%3Dep-icy-voice-a27hrqt6')
-
-#url = urlparse(DATABASE_URL)
-
-#DATABASES = {
-#    'default': {
-#        'ENGINE': 'django.db.backends.postgresql',
-#        'NAME': url.path[1:],  # Skips the leading '/'
-#        'USER': url.username,
-#        'PASSWORD': url.password,
-#        'HOST': url.hostname,
-#        'PORT': url.port or 5432,
-#        'OPTIONS': {
-#            'sslmode': 'require',  # Ensures secure connection
-#        },
-#    }
-#}
 
 if 'DATABASE_URL' in os.environ:
     DATABASES = {
@@ -224,31 +196,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-#STATICFILES_LOCATION = 'static'
-#MEDIAFILES_LOCATION = 'media'
 
-#if 'USE_AWS' in os.environ:
-
-#    AWS_S3_OBJECT_PARAMETERS = {
-#        'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
-#        'CacheControl': 'max-age=94608000',
-#    }
-#    AWS_STORAGE_BUCKET_NAME = 'mycollections1'
-#    AWS_S3_REGION_NAME = 'eu-north-1'
-#    AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
-#    AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
-#    AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
-
-
-#    STATICFILES_STORAGE = 'custom_storages.StaticStorage'
-
-#    DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
-    
-
-#    STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
-#    MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
-
-#    STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 if 'USE_AWS' in os.environ:
     # Cache control
