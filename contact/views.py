@@ -3,11 +3,18 @@ from django.contrib import messages
 from .forms import ContactForm
 from django.core.mail import send_mail
 from django.conf import settings
+from .models import Contact
 
 def contact_view(request):
     if request.method == 'POST':
         form = ContactForm(request.POST)
         if form.is_valid():
+            # Save message locally
+            Contact.objects.create(
+                name=form.cleaned_data['name'],
+                email=form.cleaned_data['email'],
+                message=form.cleaned_data['message']
+            )
             # Send email (optional)
             subject = f"Contact Form: {form.cleaned_data['name']}"
             message = f"Message from {form.cleaned_data['name']} ({form.cleaned_data['email']}):\n\n{form.cleaned_data['message']}"

@@ -28,7 +28,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = [
     'mycollections-379ea5dbbc8f.herokuapp.com',
@@ -36,7 +36,13 @@ ALLOWED_HOSTS = [
     'localhost', # listen for stripe webhooks 
 ]
 
-
+CSRF_TRUSTED_ORIGINS = [
+    'https://mycollections-379ea5dbbc8f.herokuapp.com',
+    'http://localhost:8000',
+    'https://localhost:8000',
+    'http://127.0.0.1:8000',
+    'https://127.0.0.1:8000',
+]
 
 
 # Application definition
