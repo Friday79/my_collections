@@ -1,4 +1,4 @@
-+**My_Collections**
+
 **My_Collections** is a full-featured e-commerce platform built with Django. It offers a seamless shopping experience for users to browse and purchase **clothing essentials, homeware, and special offers**. The platform includes user registration with **Allauth**, a dynamic shopping bag system, **search functionality**, a secure **Stripe-powered checkout**, and an intuitive **admin dashboard** for managing products and orders.
 To Navigate the site, on the  **Homepage** top left corner, when you click **mycollections Logo** it will take you back to the homepage . Next on the right side of mycollections logo is the **Search functionality**, that we can use to search for product. Next to that is the **Account registration**,where we can **register** and create a **profile** and can **logout** of the page or **login** when the account is clicked. As an **Admin user**, you can **login as superuser**, by typing **python3 manage.py createsuperuser**, then fill in your **Username** ,**Email** and **Password** in the terminal.Then navigate to **Admin board** , there you can manage product by **Updating, Editing,Creating and Deleting**.
 At the Nav we have all product ,that when we click , we can choose the product we want by **price, rating, category**. Next is **Clothing**, when clicked, we can select the category of clothe we want. Next is **Homeware**,when clicked, we can select the one we want from the list.Next is **Special offer**, when clicked we can also select what we want from the list. At the top right corner of the home page is the **Bag icon** that when clicked we can can see the products we have selected, and the total cost.
@@ -51,11 +51,11 @@ In the bag we will see all the product we have added to the bag,then we can edit
 . ## SOCIAL MEDIA MARKETING
 
 
-- - ## Mailchimp
+- - ## Mailchimp For Email Marketing
 - ![image](https://github.com/user-attachments/assets/baa7dac9-af9a-4b91-bcef-d317ac775e5a)
 
 
-- ## Fcebook Business page
+- ## Facebook Business Marketing page For B2C
 - ![image](https://github.com/user-attachments/assets/de385d74-5cf2-475c-b8f8-45b5b62e6fe3)
 
 - ## FLOWCHART
