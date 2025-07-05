@@ -48,10 +48,9 @@ In the bag we will see all the product we have added to the bag,then we can edit
 - ## Checkout Css Testing
 - ![image](https://github.com/user-attachments/assets/d4d3ef33-d297-496b-b481-94de9a7bd405)
 
-. ## SOCIAL MEDIA MARKETING
+## SOCIAL MEDIA MARKETING
 
-
-- - ## Mailchimp For Email Marketing
+- - ##  Newsletter Signup with Mailchimp For Email Marketing
 - ![image](https://github.com/user-attachments/assets/baa7dac9-af9a-4b91-bcef-d317ac775e5a)
 
 
