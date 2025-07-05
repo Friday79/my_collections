@@ -5,11 +5,15 @@ At the Nav we have all product ,that when we click , we can choose the product w
 There is a shop now link that when clicked, it will take us to the store. If any product is clicked, then in the product details, we can **review, select seize,rate, increase quantity** with the increment and decrement button. At the bottom of the product detail page we click on add to bag, to add the product to bag and click on keep shopping to continue shopping. 
 In the bag we will see all the product we have added to the bag,then we can edit or delete product before we click on checkout at the bottom of the page, which then take us to the payment section,where we will fill in our shipping information and make payment, then **Receive Email Comfirmation** after payment.
 
+**IMPORTANT COMMENT**
+- Database_url code was in settings.py which was destrimental to this project but have been remove from settings.py
+
+
 ---
 
 ## 🔗 Live Site
 
-👉 [Deployed Site on Heroku](https://mycollections-379ea5dbbc8f.herokuapp.com/.com)
+👉 [Deployed Site on Heroku](https://mycollections-379ea5dbbc8f.herokuapp.com/)
 
 ---
 
@@ -43,6 +47,8 @@ In the bag we will see all the product we have added to the bag,then we can edit
 
 - ## Checkout Css Testing
 - ![image](https://github.com/user-attachments/assets/d4d3ef33-d297-496b-b481-94de9a7bd405)
+
+. ## SOCIAL MEDIA MARKETING
 
 
 - - ## Mailchimp
@@ -181,7 +187,7 @@ profiles/views.py                        25      0   100%
 
 ## BUG
 - There was a bug making the page to crash, but has been fixed.
-- How it wsa fixed
+- How it was fixed
 - inspected the page
 -  click on application then click on cookies
 -  Under the cookies, click your url then clear.
