@@ -51,6 +51,8 @@ In the bag we will see all the product we have added to the bag,then we can edit
 ## SOCIAL MEDIA MARKETING
 
 - - ##  Newsletter Signup with Mailchimp For Email Marketing
+- - ![image](https://github.com/user-attachments/assets/5c26f95b-0ba3-4d03-b305-a6d6d74c4f52)
+
 - ![image](https://github.com/user-attachments/assets/baa7dac9-af9a-4b91-bcef-d317ac775e5a)
 
 
