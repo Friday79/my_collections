@@ -67,10 +67,15 @@
             <input class="form-control border border-black rounded-0" type="text" name="q"
               placeholder="Search our site">
             <div class="input-group-append">
-              <button class="form-control btn btn-black border border-black rounded-0" type="submit" aria-label="Search">
+              <button class="form-control btn btn-black border border-black rounded-0" type="submit"
+                aria-label="Search">
                 <span class="icon">
                   <i class="fas fa-search"></i>
                 </span>
+
+
+
+
               </button>
             </div>
           </div>
@@ -79,7 +84,7 @@
       <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
         <ul class="list-inline list-unstyled text-center text-lg-right my-0">
           <li class="list-inline-item dropdown">
-            <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true"
+            <a class="text-black nav-link" href="#" id="user-options-1" data-toggle="dropdown" aria-haspopup="true"
               aria-expanded="false">
               <div class="text-center">
                 <div><i class="fas fa-user fa-lg"></i></div>
@@ -100,7 +105,8 @@
             </div>
           </li>
           <li class="list-inline-item">
-            <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="{% url 'view_bag' %}">
+            <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link"
+              href="{% url 'view_bag' %}">
               <div class="text-center">
                 <div><i class="fas fa-shopping-bag fa-lg"></i></div>
                 <p class="my-0">
@@ -135,20 +141,20 @@
 
   {% if messages %}
   <div class="message-container">
-    
-      {% for message in messages %}
-          {% with message.level as level %}
-              {% if level == 40 %}
-                  {% include 'includes/toasts/toast_error.html' %}
-              {% elif level == 30 %}
-                  {% include 'includes/toasts/toast_warning.html' %}
-              {% elif level == 25 %}
-                  {% include 'includes/toasts/toast_success.html' %}
-              {% else %}
-                  {% include 'includes/toasts/toast_info.html' %}
-              {% endif %}
-          {% endwith %}
-      {% endfor %}
+
+    {% for message in messages %}
+    {% with message.level as level %}
+    {% if level == 40 %}
+    {% include 'includes/toasts/toast_error.html' %}
+    {% elif level == 30 %}
+    {% include 'includes/toasts/toast_warning.html' %}
+    {% elif level == 25 %}
+    {% include 'includes/toasts/toast_success.html' %}
+    {% else %}
+    {% include 'includes/toasts/toast_info.html' %}
+    {% endif %}
+    {% endwith %}
+    {% endfor %}
   </div>
   {% endif %}
 
@@ -163,7 +169,7 @@
   <script type="text/javascript">
     $('.toast').toast('show');
   </script>
- 
+
   {% endblock %}
   <footer class="bg-dark text-white  w-100  mt-auto py-4">
     <div class="container">
@@ -173,7 +179,7 @@
           <h5>About MyCollections</h5>
           <p>Unique items and limited <br> editions curated just for <br> you, come check it out</p>
         </div>
-  
+
         <!-- Links -->
         <div class="col-md-4">
           <h5>Quick Links</h5>
@@ -184,22 +190,24 @@
             <li><a href="{% url 'contact' %}" class="text-white">Contact Us</a></li>
           </ul>
         </div>
-  
+
         <!-- Social + Newsletter -->
         <div class="col-md-4">
           <h5>Connect</h5>
-          <a href="https://www.facebook.com/profile.php?id=61575105479072" target="_blank" class="text-white me-2">
-            <i class="fab fa-facebook-f"></i>
+          <a href="https://www.facebook.com/profile.php?id=61575105479072" target="_blank" class="text-white me-2" aria-label="Visit our Facebook page">
+            <i class="fab fa-facebook-f" aria-hidden="true"></i>
           </a>
-          <a href="mailto:fridexcool@gmail.com" class="text-white">
-            <i class="fas fa-envelope"></i>
+          <a href="mailto:fridexcool@gmail.com" class="text-white" aria-label="Send us an email">
+            <i class="fas fa-envelope" aria-hidden="true"></i>
           </a>
-  
+
           <div class="mt-3">
-            <form id="mc-embedded-subscribe-form" action="https://us14.list-manage.com/subscribe/post?u=49c71baa1396e2ee41cfd80c8&amp;id=016baba196&amp;f_id=007461e0f0" method="post" target="_blank" novalidate>
+            <form id="mc-embedded-subscribe-form"
+              action="https://us14.list-manage.com/subscribe/post?u=49c71baa1396e2ee41cfd80c8&amp;id=016baba196&amp;f_id=007461e0f0"
+              method="post" target="_blank" novalidate>
               <div class="mb-2">
                 <label for="mce-EMAIL" class="form-label">Subscribe</label>
-                <input type="email" name="EMAIL" class="form-control" id="mce-EMAIL" placeholder="Your email" required>
+                <input type="email" name="EMAIL" class="form-control" id="mce-EMAIL" placeholder="Your email" required autocomplete="email">
               </div>
               <div style="position: absolute; left: -5000px;" aria-hidden="true">
                 <input type="text" name="b_49c71baa1396e2ee41cfd80c8_016baba196" tabindex="-1" value="">
@@ -207,26 +215,27 @@
               <button type="submit" name="subscribe" class="btn btn-outline-light btn-sm">Subscribe</button>
             </form>
           </div>
-  
+
           <p class="mt-3 mb-0">&copy; 2025 MyCollections</p>
-          
+
         </div>
       </div>
     </div>
     <!-- Mailchimp validation script -->
-     <!-- Mailchimp validation script -->
-  <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
-  <script type="text/javascript">
-    (function($) {
-      window.fnames = new Array(); 
-      window.ftypes = new Array();
-      fnames[0] = 'EMAIL'; ftypes[0] = 'email';
-    }(jQuery));
-    var $mcj = jQuery.noConflict(true);
-  </script>
-  
+    <!-- Mailchimp validation script -->
+    <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+    <script type="text/javascript">
+      (function ($) {
+        window.fnames = new Array();
+        window.ftypes = new Array();
+        fnames[0] = 'EMAIL'; ftypes[0] = 'email';
+      }(jQuery));
+      var $mcj = jQuery.noConflict(true);
+    </script>
+
   </footer>
 
 </body>
-
-</html>
+  
+  </html>
+  
