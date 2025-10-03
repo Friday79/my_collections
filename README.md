@@ -180,11 +180,21 @@ profiles/views.py                        25      0   100%
 
 ### 👤 User Features
 - Register / Log in / Log out
+- Login success message.
+- ![image](https://github.com/user-attachments/assets/bbcadf63-5f18-4f35-bb43-3675968969b0)
 - Browse and search products
+- Searching an empty bar
+- ![image](https://github.com/user-attachments/assets/e12006ea-f970-4117-91df-7a6b62fde12a)
 - Add items to shopping bag
+- ![image](https://github.com/user-attachments/assets/7eed775d-c644-495d-a080-fccfec83da72)
 - Update or remove items
+- ![image](https://github.com/user-attachments/assets/5acfe8ee-d135-4b67-ac9e-1dcbcedb0371)
+- ![image](https://github.com/user-attachments/assets/b2eec2f3-bee1-4644-a6c5-7728acc2bf5e)
 - Proceed to secure checkout
+- ![image](https://github.com/user-attachments/assets/62cac024-ef3a-491d-8df3-f532c07927b3)
 - Receive email confirmation after payment
+- Message sent confirmation on contact page.
+- ![image](https://github.com/user-attachments/assets/7453d58a-f32c-430b-9ff9-a482371239e6)
 
 ## BUG
 - There was a bug making the page to crash, but has been fixed.
@@ -197,12 +207,12 @@ profiles/views.py                        25      0   100%
 
 | Area             | Technology                         |
 |------------------|------------------------------------|
-| Framework        | Django<4                          |
+| Framework        | Django 4.2                          |
 | Frontend         | HTML5, CSS3, JavaScript, Bootstrap |
 | Backend          | Python 3.12                        |
 | Authentication   | Django Allauth                    |
 | Payments         | Stripe                             |
-| Media Storage    | Cloudinary                         |
+| Media Storage    | Aws3                         |
 | Deployment       | Heroku                             |
 | Environment Vars | dj-database-url                  |
 | Database         | PostgreSQL (Production), SQLite (Dev) |
@@ -282,7 +292,7 @@ my_collections/
 ├── profiles/           # User profiles & order history
 ├── templates/          # HTML templates
 ├── static/             # Static files (CSS, JS, images)
-├── media/              # Uploaded images via Cloudinary
+├── media/              # Uploaded images via Aws3
 ├── my_collections/     # Project settings and URLs
 ├── manage.py
 🧑‍💻 Admin Access
