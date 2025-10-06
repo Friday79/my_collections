@@ -45,6 +45,12 @@ In the bag we will see all the product we have added to the bag,then we can edit
 
 - ![Image](https://github.com/user-attachments/assets/e9d64aa4-dfaf-4c3d-9009-39117bb5eb82)
 
+-## Html validation.
+- ![image](https://github.com/user-attachments/assets/9065710c-85d0-46d4-bfb8-e0a5d2cde0b6)
+
+- ## Pep8
+- 
+
 - ## Checkout Css Testing
 - ![image](https://github.com/user-attachments/assets/d4d3ef33-d297-496b-b481-94de9a7bd405)
 

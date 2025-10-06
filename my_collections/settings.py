@@ -10,16 +10,16 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
-from pathlib import Path
 import os
+from pathlib import Path
+from urllib.parse import urlparse
 import dj_database_url
-from urllib.parse import urlparse 
+
 if os.path.isfile('env.py'):
-   import env # flake8 will throw an error here, but it is necessary to import env.py
+    import env  # noqa: F401
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
@@ -32,8 +32,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     'mycollections-379ea5dbbc8f.herokuapp.com',
-    '127.0.0.1', # vs code preview
-    'localhost', # listen for stripe webhooks 
+    '127.0.0.1',  # VS Code preview
+    'localhost',  # Listen for Stripe webhooks
 ]
 
 CSRF_TRUSTED_ORIGINS = [
@@ -44,28 +44,25 @@ CSRF_TRUSTED_ORIGINS = [
     'https://127.0.0.1:8000',
 ]
 
-
 # Application definition
-
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    
     'django.contrib.staticfiles',
 
     'django.contrib.sites',
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
-    
+
     'home',
     'products',
     'bag',
     'checkout',
-    'profiles', 
+    'profiles',
     'crispy_forms',
     'crispy_bootstrap4',
     'storages',
@@ -73,22 +70,14 @@ INSTALLED_APPS = [
     'wishlist',
 ]
 
-#STATICFILES_FINDERS = [
-#    'django.contrib.staticfiles.finders.FileSystemFinder',
-#    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
-#]
-
-
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-#    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-
 ]
 
 ROOT_URLCONF = 'my_collections.urls'
@@ -107,12 +96,13 @@ TEMPLATES = [
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
-                'django.template.context_processors.request', # required by allauth
+                # Required by allauth
+                'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'bag.contexts.bag_contents',
             ],
-             'builtins': [
+            'builtins': [
                 'crispy_forms.templatetags.crispy_forms_tags',
                 'crispy_forms.templatetags.crispy_forms_field',
             ],
@@ -123,10 +113,10 @@ TEMPLATES = [
 MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
 
 AUTHENTICATION_BACKENDS = [
-    # Needed to login by username in Django admin, regardless of `allauth`
+    # Needed to log in by username in Django admin
     'django.contrib.auth.backends.ModelBackend',
 
-    # `allauth` specific authentication methods, such as login by email
+    # `allauth` specific authentication methods
     'allauth.account.auth_backends.AuthenticationBackend',
 ]
 
@@ -142,14 +132,11 @@ LOGIN_REDIRECT_URL = '/'
 
 WSGI_APPLICATION = 'my_collections.wsgi.application'
 
-
-
-
 if 'DATABASE_URL' in os.environ:
     DATABASES = {
         'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
     }
-else: 
+else:
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.sqlite3',
@@ -157,53 +144,48 @@ else:
         }
     }
 
-
 # Password validation
-# https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
-
 AUTH_PASSWORD_VALIDATORS = [
     {
-        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
+        'NAME': (
+            'django.contrib.auth.password_validation.'
+            'UserAttributeSimilarityValidator'
+        ),
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
+        'NAME': (
+            'django.contrib.auth.password_validation.'
+            'MinimumLengthValidator'
+        ),
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
+        'NAME': (
+            'django.contrib.auth.password_validation.'
+            'CommonPasswordValidator'
+        ),
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
+        'NAME': (
+            'django.contrib.auth.password_validation.'
+            'NumericPasswordValidator'
+        ),
     },
 ]
 
-
 # Internationalization
-# https://docs.djangoproject.com/en/3.2/topics/i18n/
-
 LANGUAGE_CODE = 'en-us'
-
 TIME_ZONE = 'UTC'
-
 USE_I18N = True
-
 USE_L10N = True
-
 USE_TZ = True
 
-
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/3.2/howto/static-files/
-
+# Static files
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles') 
-#STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-
-
 
 if 'USE_AWS' in os.environ:
     # Cache control
@@ -211,49 +193,46 @@ if 'USE_AWS' in os.environ:
         'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
         'CacheControl': 'max-age=94608000',
     }
-    
+
     # Bucket Config
-    AWS_STORAGE_BUCKET_NAME = 'mycollections1' # change this to your AWS bucket name
+    AWS_STORAGE_BUCKET_NAME = 'mycollections1'
     AWS_S3_REGION_NAME = 'eu-north-1'
     AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
     AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
     AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
 
-    # Static and media files
-    #STATICFILES_STORAGE = 'custom_storages.StaticStorage'
     STATICFILES_LOCATION = 'static'
-    #DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
     MEDIAFILES_LOCATION = 'media'
-
 
     STORAGES = {
         'default': {
             'BACKEND': 'custom_storages.MediaStorage',
         },
-        'staticfiles': {'BACKEND': 'custom_storages.StaticStorage'},
+        'staticfiles': {
+            'BACKEND': 'custom_storages.StaticStorage',
+        },
     }
 
-    # Override static and media URLs in production
     STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
     MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
-
 else:
-    STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'   
-
-#CLOUDINARY_URL = os.getenv('CLOUDINARY_URL')
-#DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+    STATICFILES_STORAGE = (
+        'django.contrib.staticfiles.storage.StaticFilesStorage'
+    )
 
 FREE_DELIVERY_THRESHOLD = 75
 STANDARD_DELIVERY_PERCENTAGE = 10
 STRIPE_CURRENCY = 'usd'
-STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', 'pk_test_51R5BR0DChiXygMGLe3YdctIK2yeuqgp8CutEvhBwnffVlf4JDHhtycFkYtTxgzWa31menR2WXQt56F2Tbp1b6zbl008eimZtqx')
+STRIPE_PUBLIC_KEY = os.getenv(
+    'STRIPE_PUBLIC_KEY',
+    'pk_test_51R5BR0DChiXygMGLe3YdctIK2yeuqgp8CutEvhBwnffVlf4JDHhtycFkYtTxgzWa31menR2WXQt56F2Tbp1b6zbl008eimZtqx',
+)
 STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY')
 STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET')
 
 if 'DEVELOPMENT' in os.environ:
     EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
     DEFAULT_FROM_EMAIL = 'my_collections@example.com'
-
 else:
     EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
     EMAIL_USE_TLS = True
@@ -262,9 +241,6 @@ else:
     EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
     EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASS')
     DEFAULT_FROM_EMAIL = os.environ.get('DEFAULT_FROM_EMAIL')
-
-# Default primary key field type
-# https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
