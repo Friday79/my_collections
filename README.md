@@ -48,8 +48,11 @@ In the bag we will see all the product we have added to the bag,then we can edit
 -## Html validation.
 - ![image](https://github.com/user-attachments/assets/9065710c-85d0-46d4-bfb8-e0a5d2cde0b6)
 
-- ## Pep8
-- 
+- ## Pep8 for settings.py
+- ![image](https://github.com/user-attachments/assets/c6a4ef0e-8ebb-498d-ac10-423d786aec6a)
+
+- ## Pep8 for checkout views.py
+- ![image](https://github.com/user-attachments/assets/d8036398-ac74-40cc-8e94-335fceb87cba)
 
 - ## Checkout Css Testing
 - ![image](https://github.com/user-attachments/assets/d4d3ef33-d297-496b-b481-94de9a7bd405)
