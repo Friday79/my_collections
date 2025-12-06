@@ -163,17 +163,7 @@ Engaging homepage poll system.
 
 Newsletter for customer loyalty.
 
-10. Future Growth Opportunities
 
-Add customer product reviews
-
-Add wishlist functionality
-
-Launch mobile app version
-
-Introduce “subscription boxes”
-
-Expand into international shipping
 
 
 ---
@@ -189,6 +179,8 @@ Expand into international shipping
 - Home Page
 - ![image](https://github.com/user-attachments/assets/5eb821da-d9d6-453d-a6ea-55671820b91f)
 
+- ![image](https://github.com/user-attachments/assets/d2b7e597-3626-4734-be36-e9f7bf9259a5)
+
 - Search Results
 - ![image](https://github.com/user-attachments/assets/0d0424a8-c238-46e1-856e-ddef0b788f2d)
 
@@ -197,12 +189,23 @@ Expand into international shipping
 - ![image](https://github.com/user-attachments/assets/894b40c2-11b1-4e28-a499-ffe55a1bf600)
 
 
+**Wishlist**
+- ![image](https://github.com/user-attachments/assets/56557a9c-c8a9-4997-a058-49dbcbf29803)
+
+
+**Profile**
+- ![image](https://github.com/user-attachments/assets/a4240cfc-a4c6-4f88-bf7a-d908342ea724)
+
 
 - Shopping Bag
 - ![image](https://github.com/user-attachments/assets/5f2ebd43-e33f-44ca-b2ce-ff851fb07540)
 
 - Stripe Checkout
 - ![image](https://github.com/user-attachments/assets/bee01ffd-5d4d-4272-a785-c0b2c6ad1e5f)
+
+
+**Order Receipt**
+- ![image](https://github.com/user-attachments/assets/d6478eaa-f603-443e-abe0-04798b8833b3)
 
 - Admin Dashboard
 - ![image](https://github.com/user-attachments/assets/15bd0a0f-0ad8-4b08-b531-c1298f40af09)
