@@ -184,6 +184,8 @@ Newsletter for customer loyalty.
 - Search Results
 - ![image](https://github.com/user-attachments/assets/0d0424a8-c238-46e1-856e-ddef0b788f2d)
 
+- ![image](https://github.com/user-attachments/assets/022bbe38-c7b4-4486-a35a-e5aaf0c0d625)
+
 
 - Product Detail
 - ![image](https://github.com/user-attachments/assets/894b40c2-11b1-4e28-a499-ffe55a1bf600)
@@ -216,6 +218,8 @@ Newsletter for customer loyalty.
 - ![Image](https://github.com/user-attachments/assets/e9d64aa4-dfaf-4c3d-9009-39117bb5eb82)
 
 -## Html validation.
+- ![image](https://github.com/user-attachments/assets/fb66c9b5-742e-4675-a9f6-5a7eeb1b8029)
+
 - ![image](https://github.com/user-attachments/assets/9065710c-85d0-46d4-bfb8-e0a5d2cde0b6)
 
 - ## Pep8 for settings.py
