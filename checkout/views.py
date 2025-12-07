@@ -59,11 +59,13 @@ def checkout(request):
             for item_id, item_data in bag.items():
                 try:
                     product = Product.objects.get(id=item_id)
+                    price = product.sale_price if product.sale_price and product.sale_price < product.price else product.price
                     if isinstance(item_data, int):
                         order_line_item = OrderLineItem(
                             order=order,
                             product=product,
                             quantity=item_data,
+                            
                         )
                         order_line_item.save()
                     else:
@@ -73,6 +75,7 @@ def checkout(request):
                                 product=product,
                                 quantity=quantity,
                                 product_size=size,
+                                
                             )
                             order_line_item.save()
                 except Product.DoesNotExist:
