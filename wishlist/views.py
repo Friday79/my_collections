@@ -13,13 +13,21 @@ def wishlist_view(request):
 @login_required
 def add_to_wishlist(request, product_id):
     product = get_object_or_404(Product, id=product_id)
-    Wishlist.objects.get_or_create(user=request.user, product=product)
+    wishlist_item, created = Wishlist.objects.get_or_create(user=request.user, product=product)
+    if created:
+        messages.success(request, f"{product.name} has been added to your wishlist.")
+    else:
+        messages.info(request, f"{product.name} is already in your wishlist.")
     return redirect("wishlist")
 
 @login_required
 def remove_from_wishlist(request, product_id):
     product = get_object_or_404(Product, id=product_id)
-    Wishlist.objects.filter(user=request.user, product=product).delete()
+    deleted, _ = Wishlist.objects.filter(user=request.user, product=product).delete()
+    if deleted:
+        messages.success(request, f"{product.name} has been removed from your wishlist.")
+    else:
+        messages.info(request, f"{product.name} was not in your wishlist.")
     return redirect("wishlist")
 
 @login_required
@@ -38,5 +46,7 @@ def move_to_bag(request, product_id):
 
     # Remove from wishlist
     Wishlist.objects.filter(user=request.user, product=product).delete()
+    # Add success message
+    messages.success(request, f"{product.name} has been moved to your bag.")
 
     return redirect('view_bag')
