@@ -240,7 +240,7 @@ Newsletter for customer loyalty.
 
 
 - ## Facebook Business Marketing page For B2C
--  [Mock Facebook Business Page](https://www.facebook.com/mycollections)
+-  [Mock Facebook Business Page](https://www.facebook.com/people/mycollections/61575105479072/)
 - ![image](https://github.com/user-attachments/assets/de385d74-5cf2-475c-b8f8-45b5b62e6fe3)
 
 - ## FLOWCHART
