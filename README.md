@@ -10,158 +10,158 @@ In the bag we will see all the product we have added to the bag,then we can edit
 
 **E-Commerce Business Model for MyCollection**
 
-1. Business Overview
+1. ## Business Overview
 
-MyCollection is an online boutique store that sells curated fashion items and lifestyle accessories.
-The platform allows users to browse products, add items to a shopping bag, securely checkout, and manage their own profiles.
+**MyCollection** is an online boutique store that sells curated fashion items and lifestyle accessories.
+- The platform allows users to browse products, add items to a shopping bag, securely checkout, and manage their own profiles.
 
-2. Value Proposition
+2. ## Value Proposition
 
 MyCollection provides:
 
-A simple and visually appealing online shopping experience.
+- A simple and visually appealing online shopping experience.
 
-High-quality, handpicked items.
+- High-quality, handpicked items.
 
-Secure checkout using Stripe.
+- Secure checkout using Stripe.
 
-Personalized user accounts for order history and saved details.
+- Personalized user accounts for order history and saved details.
 
-A newsletter for exclusive discounts and product launches.
+- A newsletter for exclusive discounts and product launches.
 
-3. Target Customers
+3. ## Target Customers
 
-Fashion lovers aged 18–55.
+- Fashion lovers aged 18–55.
 
-Online shoppers looking for unique collections.
+- Online shoppers looking for unique collections.
 
-People who prefer buying boutique products rather than mass-market items.
+- People who prefer buying boutique products rather than mass-market items.
 
-Social media users influenced by lifestyle trends.
+- Social media users influenced by lifestyle trends.
 
-4. Product Offering
+4. ## Product Offering
 
-Clothing (men/women/unisex)
+- Clothing (men/women/unisex)
 
-Accessories (bags, watch, belts, etc.)
+- Accessories (bags, watch, belts, etc.)
 
-Handcrafted items
+- Handcrafted items
 
-Artwork
+- Artwork
 
-Shoes
+- Shoes
 
-Seasonal “limited collection” drops
+- Seasonal “limited collection” drops
 
-Each product typically includes:
+- Each product typically includes:
 
-Name
+- Name
 
-Description
+- Description
 
-Price
+- Price
 
-Category
+- Category
 
-Image
+- Image
 
-Stock/availability information
+- Stock/availability information
 
-5. Revenue Streams
+5. ## Revenue Streams
 
-Direct product sales
+- Direct product sales
 
-Seasonal promotions (Black Friday, summer sale)
+- Seasonal promotions (Black Friday, summer sale)
 
-Newsletter-driven campaigns
+- Newsletter-driven campaigns
 
-Limited edition drops to create demand
+- Limited edition drops to create demand
 
-6. Marketing Strategy
+6. ## Marketing Strategy
 
-MyCollection uses multiple digital marketing strategies:
+- MyCollection uses multiple digital marketing strategies:
 
-Social Media Marketing
+- Social Media Marketing
 
-Instagram and Facebook pages showing products
+- Instagram and Facebook pages showing products
 
-Reels and stories for new arrivals
+- Reels and stories for new arrivals
 
-Email Marketing
+- Email Marketing
 
-Newsletter signup form on the homepage
+- Newsletter signup form on the homepage
 
-Exclusive discount codes sent via email
+- Exclusive discount codes sent via email
 
-SEO Strategy
+- SEO Strategy
 
-Relevant keywords ("boutique store", "unique accessories")
+- Relevant keywords ("boutique store", "unique accessories")
 
-Meta description and Open Graph tags
+- Meta description and Open Graph tags
 
-Sitemap and robots.txt configured
+- Sitemap and robots.txt configured
 
-Responsive, mobile-friendly UI
+- Responsive, mobile-friendly UI
 
-Customer Engagement
+- Customer Engagement
 
-Polls on homepage 
+- Polls on homepage 
 
-Comment sections or reviews (if implemented)
+- Comment sections or reviews (if implemented)
 
-Personalized recommendations (optional)
+- Personalized recommendations (optional)
 
-7. Operations Model
-Order Processing Workflow
+7. ## Operations Model
+- Order Processing Workflow
 
-Customer adds product to cart.
+- Customer adds product to cart.
 
-Customer checks out securely via Stripe PaymentIntent.
+- Customer checks out securely via Stripe PaymentIntent.
 
-Order saved to database and Stripe dashboard.
+- Order saved to database and Stripe dashboard.
 
-Stripe webhook confirms successful payment.
+- Stripe webhook confirms successful payment.
 
-Order email confirmation sent to customer.
+- Order email confirmation sent to customer.
 
-Admin panel used to fulfil orders.
+- Admin panel used to fulfil orders.
 
-Inventory Management
+- Inventory Management
 
-Stock numbers managed through the Django admin panel.
+- Stock numbers managed through the Django admin panel.
 
-Customer Support
+- Customer Support
 
-Contact form
+- Contact form
 
-Email support (your email: fridexcool@gmail.com
+- Email support (your email: fridexcool@gmail.com
 )
 
-8. Cost Structure
+8. ## Cost Structure
 
-Hosting costs (GitHub + Render/Heroku)
+- Hosting costs (GitHub + Render/Heroku)
 
-Stripe transaction fees
+- Stripe transaction fees
 
-Marketing (Facebook/Instagram ads)
+- Marketing (Facebook/Instagram ads)
 
-Product sourcing or manufacturing costs
+- Product sourcing or manufacturing costs
 
-Domain name registration (optional)
+- Domain name registration (optional)
 
-9. Competitive Advantage
+9. ## Competitive Advantage
 
-MyCollection stands out because:
+- MyCollection stands out because:
 
-Boutique-style curated selection instead of mass-market products.
+- Boutique-style curated selection instead of mass-market products.
 
-Clean, mobile-first design using Bootstrap.
+- Clean, mobile-first design using Bootstrap.
 
-Fast and secure checkout via Stripe.
+- Fast and secure checkout via Stripe.
 
-Engaging homepage poll system.
+- Engaging homepage poll system.
 
-Newsletter for customer loyalty.
+- Newsletter for customer loyalty.
 
 
 
@@ -171,6 +171,9 @@ Newsletter for customer loyalty.
 ## 🔗 Live Site
 
 👉 [Deployed Site on Heroku](https://mycollections-379ea5dbbc8f.herokuapp.com/)
+    [Stripe Payments](https://stripe.com)
+    [GitHub Repository](https://github.com/Friday79/my_collections)
+
 
 ---
 
@@ -240,7 +243,7 @@ Newsletter for customer loyalty.
 
 
 - ## Facebook Business Marketing page For B2C
--  [Mock Facebook Business Page](https://www.facebook.com/people/mycollections/61575105479072/)
+-  [Mock Facebook Business Page](https://www.facebook.com/people/mycollections)
 - ![image](https://github.com/user-attachments/assets/de385d74-5cf2-475c-b8f8-45b5b62e6fe3)
 
 - ## FLOWCHART
@@ -351,10 +354,292 @@ profiles/tests.py                         1      0   100%
 profiles/urls.py                          3      0   100%
 profiles/views.py                        25      0   100%
 
+## Deployment
+The project was developed using[Gitpod](https://www.gitpod.io/). workspace. The code was commited to  [Git](https://git-scm.com/). and pushed to GitHub using the terminal. The web application is deployed on Heroku as  [GitHub](https://github.com/your-username/my_collections). Pages is not able to host a Python project. Static and media files are being stored in AWS S3. The repository is hosted on Github.
 
-## 🚀 Features
+## How To Use This Project
+To use and further develop this project you can either fork or clone the repository.
 
-### 🌟 Core Features
+## Fork GitHub Repository
+By forking the GitHub repository you can make a copy of the original repository on your GitHub account to view and/or make changes without affecting the original repository, by using the following steps:
+
+1. Log in to GitHub.
+2. Navigate to the main page of the GitHub Repository that you want to fork.
+3. At the top right of the Repository just below your profile picture, locate the "Fork" button.
+4. You should now have a copy of the original repository in your GitHub account.
+5. Changes made to the forked repository can be merged with the original repository via a pull request.
+## Clone Github Repository
+By cloning a GitHub repository you can create a local copy on your computer of the remote repository. The developer who clones a repository can synchronize their copy of the codebase with any updates made by fellow developers with push or pull request. Cloning is done by using the following steps:
+
+1. Log in to GitHub.
+2. Navigate to the main page of the GitHub Repository that you want to clone.
+3. Above the list of files, click the dropdown called "Code".
+4. To clone the repository using HTTPS, under "HTTPS", copy the link.
+5. Open Git Bash.
+6. Change the current working directory to the location where you want the cloned directory to be made.
+7. Type git clone, and then paste the URL you copied in Step 4.
+$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+8. 
+Press Enter. Your local clone will be created.
+$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+> Cloning into `CI-Clone`...
+> remote: Counting objects: 10, done.
+> remote: Compressing objects: 100% (8/8), done.
+> remove: Total 10 (delta 1), reused 10 (delta 1)
+> Unpacking objects: 100% (10/10), done.
+Changes made on the local machine (cloned repository) can be pushed to the upstream repository directly if you have a write access for the repository. Otherwise, the changes made in the cloned repository are first pushed to the forked repository, and then a pull request is created.
+Click [Here](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) to retrieve pictures for some of the buttons and more detailed explanations of the above process.
+
+## Project Set Up After Forking or Cloning
+1. Install all dependencies by typing in the CLI pip3 install -r requirements.txt
+
+2. Create a .gitignore file and env.py file in the project's root directory. Add the env.py file to .gitignore.
+
+3. Inside the env.py file, enter the project's environment variables:
+
+## import os
+
+os.environ.setdefault("SECRET_KEY", <your_secret_key>)
+os.environ.setdefault("DEVELOPMENT", '1')
+os.environ.setdefault("STRIPE_PUBLIC_KEY", <your_key>)
+os.environ.setdefault("STRIPE_SECRET_KEY", <your_key>)
+os.environ.setdefault("STRIPE_WH_SECRET", <your_key>)
+You can get the keys from:
+
+- "SECRET_KEY" can be generated using Django Secret Key Generator
+- "STRIPE_PUBLIC_KEY" and "STRIPE_SECRET_KEY" can be generated by creating a stripe account. The keys are found in 'Developers' Section, under 'API Keys'.
+- In the Developer Section, under 'Webhooks', add a new endpoint. "STRIPE_WH_SECRET". On Endpoint URL, enter:
+https://<your_host_url>/checkout/wh/
+Select to listen to all events, and create endpoint, and you can view your "STRIPE_WH_SECRET".
+- Make migrations to setup the inital database operations.
+
+python3 manage.py makemigrations 
+python3 manage.py migrate 
+5. Load data for the database or create data manually.
+
+python3 manage.py loaddata <app_name>
+6. Create a super user.
+
+python3 manage.py create superuser
+The **project** should now complete to run and can now be used for development. To run the **project**, type in the CLI terminal: python3 manage.py runserver
+
+## Deployment to Heroku
+This **project** is deployed on Heroku for production, with all static and media files stored on AWS S3. These are steps to deploy on Heroku:
+
+1. Navigate to Heroku.com, create a new account or login if you already have an account. On the dashboard page, click "Create New App" button. Give the app a name, the name must be unique with hypens between words. Set the region closest to you, and click "Create App".
+
+2. On the resources tab, provision a new Heroku Postgres database.
+
+3. Configure variables on Heroku by navigating to Settings, and click on Reveal Config Vars. You may not have all the values yet. Add the others as you progress through the steps.
+
+Varables	Key
+AWS_ACCESS_KEY_ID	your_access_key_id_from_AWS
+AWS_SECRET_ACCESS_KEY	your_secret_access_key_from_AWS
+DATABASE_URL	your_database_url
+EMAIL_HOST_PASS	your_app_password_from_your_email
+EMAIL_HOST_USER	your_email_address
+SECRET_KEY	your_secret_key
+STRIPE_PUBLIC_KEY	your_stripe_public_key
+STRIPE_SECRET_KEY	your_stripe_secret_key
+USE_AWS	True
+4. If you haven't install it, install dj_database_url and psycopg2.
+
+pip3 install dj_database_url
+pip3 install psycopg2-binary
+Note: you don't have to do this if you've installed all dependencies in the requirements.txt file.
+
+4. Set up a new database for the site by going to the project's settings.py and importing dj_database_url. Comment out the database's default configuration, and replace the default database with a call to dj_database_url.parse and pass it the database URL from Heroku (you can get it from your config variables in your app setting tab)
+
+DATABASES = {
+  'default': dj_database_url.parse('YOUR_DATABASE_URL_FROM_HEROKU')
+}
+6. Run migrations
+
+python3 manage.py migrate
+7. Import data to the database.
+
+- Make sure your manage.py file is connected to your sqlite3 database.
+- Use this command to backup your current database and load it into a db.json file:
+./manage.py dumpdata --exclude auth.permission --exclude contenttypes > db.json
+- Connect your manage.py file to your postgres database
+- Then use this command to load your data from the db.json file into postgres:
+./manage.py loaddata db.json
+8. Set up a new superuser, fill out the username, email address, and password.
+
+python3 manage.py create superuser
+9. Remove the database config from Heroku and uncomment the original config. Add a conditional statement to define that when the app is running on Heroku. we connect to Postgres, and otherwise, we connect to Sqlite.
+
+if 'DATABASE_URL' in os.environ:
+   DATABASES = {
+      'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+   }
+else:
+   DATABASES = {
+      'default': {
+         'ENGINE': 'django.db.backends.sqlite3',
+         'NAME': BASE_DIR / 'db.sqlite3',
+      }
+   }
+10. Install gunicorn which will act as the webserver, and put it on the requirements.txt.
+
+pip3 install gunicorn
+pip3 freeze > requirements.txt
+Note: you don't have to do this if you've installed all dependencies in the requirements.txt file. 11. Create a Procfile, to tell Heroku to create a web dyno, which will run unicorn and serve the Django app.
+
+11. Inside the Procfile:
+
+web: gunicorn my_collections.wsgi:application
+12. Login to Heroku through CLI, using heroku login. Once logged in, disable the collect static temporarily, so that Heroku won't try to collect static files when it deploys.
+heroku config:set DISABLE_COLLECTSTATIC=1 
+And add the hostname of the Heroku app to allowed hosts in the project's settings.py, and also add localhost so that Gitpod will still work as well:
+
+ALLOWED_HOSTS = ['mycollections-379ea5dbbc8f.herokuapp.com', 'localhost']
+13. Add, commit, and push to gitpod and then to Heroku. After pushing to gitpod as usual, initialize git remote first:
+heroku git:remote -a shoes-and-more
+Then push to Heroku:
+
+git push heroku main
+14. Go to the app's dashboard on Heroku and go to Deploy. Connect the app to Github by clicking Github and search for the repository. Click connect. Also enable the automatic deploy by clicking Enable Automatic Deploys, so that everytime we push to github, the code will automatically be deployed to Heroku as well.
+15. Go back to settings.py and replace the secret key setting with the call to get it from the environment, and use empty string as a default.
+SECRET_KEY = os.environ.get('SECRET_KEY', '')
+Set debug to be true only if there's a variable called development in the environment.
+
+DEBUG = 'DEVELOPMENT' in os.environ
+AWS Bucket Creation
+All static and media files in this project are stored in [Amazon Web Services S3](https://aws.amazon.com/) bucket which is a cloud based storage service. You can create your own bucket by following these steps:
+
+1. Go to [Amazon Web Service website](https://aws.amazon.com/) and click on Create An AWS Account, or login if you already have an account.
+
+2. Login to your new account, go to AWS Management Console and find service S3. Click on Create Bucket.
+
+- Give it a name (I recommend naming your bucket to match the Heroku app name), and choose region closest to you.
+- In Object Ownership section, choose ACLS enabled. and Bucket Owner Preffered.
+- Uncheck box 'Block All Public Access'.
+- Check box 'I acknowledge that the current settings might result in this bucket and the objects within becoming public.'
+- Click on Create Bucket, and your bucket is created.
+3. Click on your newly created bucket, and navigate to the Properties tab. Scroll down to the bottom until you find Static Website Hosting. Click on Edit, then enable.
+
+- Hosting type: choose Host a Static Website
+- Index document: index.html
+- Error document: error.html
+- Click on Save Changes.
+4. Navigate to the Permissions tab. Scroll down to the bottom until you find Cross-origin resource sharing (CORS). Click on Edit, and paste in this Cors Configuration below, which is going to set up the required access between the Heroku app and this S3 bucket. Click on Save Changes.
+
+[
+   {
+      "AllowedHeaders": [
+         "Authorization"
+      ],
+      "AllowedMethods": [
+         "GET"
+      ],
+      "AllowedOrigins": [
+         "*"
+      ],
+      "ExposeHeaders": []
+   }
+]
+Still on the Permissions tab, find Bucket policy, click on Edit, and then go to Policy Generator.
+
+- Select Type of Policy: choose S3 Bucket Policy
+- Effect: choose Allow
+- Principal: *
+- Actions: select GetObject
+- Fill in the Amazon Resource Name (ARN), from the Bucket ARN back in the Bucket Policy
+- Click on the Add Statement and then Generate Policy. Copy the policy and paste in the bucket policy editor.
+- Add a slash star on to the end of the resource key (because we want to allow access to all resources in this bucket). Click Save. The resource key should look like this
+"Resource": "arn:aws:s3:::YOUR_BUCKET_NAME/*",  
+Still on Permissions tab, go to Access Control List (ACL) section, click Edit and enable List for Everyone (public access), and accept the warning box.
+
+5. With the bucket ready, now we need to create a user to access it through another service called IAM which stands for Identity and Access Management. Go back to the service menu and open IAM.
+a. Create a group for our user to live in.
+Click User Groups, and then create a new group with a name you want. I gave the group the name: manage-shoes-and-more. Scroll down to the bottom and click on Create Group.
+b. Create an access policy giving the group access to the S3 bucket that has been created.
+
+- Click on Policy, and then Create Policy. Go to the JSON tab, and then select import managed policy, which will let us import one that AWS has pre-built for full access to S3. Search for S3, then import the AmazonS3FullAccess policy.
+- Because we only want to allow full access to our new bucket and everything within it, paste the bucket ARN (from the bucket policy page in s3) in the JSON editor.
+"Resource": [
+   "arn:aws:s3:::YOUR_BUCKET_NAME",
+   "arn:aws:s3:::YOUR_BUCKET_NAME/*"
+]
+Now click on Next:Tags, then click Next:Review.
+
+- Give the review policy a name and a description, then click Create Policy. The policy has now been created.
+c. Finally, assign the user to the group so it can use the policy to access all our files.
+
+- Go to User Groups, and select the group. Go to the Permissions tab, open the Add Permissions dropdown, and click Attach Policies.
+- Select the policy and click Add permissions at the bottom.
+- Create a user to put in the group, by going to the Users page, and clicking Add Users.
+- Set a user name, give them access type: Programmatic access, and then click Next: Permissions.
+- Check on the group that has the policy attached. Click Next: Tags, then click Next: Review, and lastly Create User.
+- Download the csv file and save it.
+## Connect Django to AWS Bucket
+Note: If you've forked the repository, all of these steps are already done/ written on the files. Make sure you've installed all dependencies in the requirements.txt file, add all the AWS-related Config Vars to Heroku, and remove the DISABLE_COLLECTSTATIC variable from Heroku.
+Here are the steps I took to connect Django to AWS:
+
+1. Install two new packages: boto3 and django-storages. Freeze them into requirements.txt.
+
+pip3 install boto3
+pip3 install django-storages 
+pip3 freeze > requirements.txt  
+2. Add storages to the Installed Apps in settings.py.
+
+3. In settings.py, we need to set cache control, set bucket configurations, set static and media files location, and override static and media URLs in production. We'll only want to do this on Heroku, so add an if statement as well.
+
+if 'USE_AWS' in os.environ:
+   # Cache control
+   AWS_S3_OBJECT_PARAMETERS = {
+      'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
+      'CacheControl': 'max-age=94608000',
+   }
+
+   # Bucket Config
+   AWS_STORAGE_BUCKET_NAME = 'YOUR_BUCKET_NAME'
+   AWS_S3_REGION_NAME = 'YOUR_REGION'
+   AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
+   AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
+   AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
+
+   # Static and media files
+   STATICFILES_STORAGE = 'custom_storages.StaticStorage'
+   STATICFILES_LOCATION = 'static'
+   DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
+   MEDIAFILES_LOCATION = 'media' 
+
+   # Override static and media URLs in production
+   STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
+   MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
+Set the Config Vars on Heroku. On your app's dashboard on Heroku, go to Settings and click Reveal Convig Vars. Set this variables:
+
+Variables	Value
+AWS_ACCESS_KEY_ID	your access key id from the csv file that you've downloaded before
+AWS_SECRET_ACCESS_KEY	your secret access key from the csv file that you've downloaded before
+USE_AWS	True
+Also remove the COLLECTSTATIC variable from the Config Vars.
+
+4. We then want to tell Django that in production we want to use S3 to store our static files whenever someone runs collectstatic, and that we sent any uploaded images to go there as well.
+Create a custom_storages.py file in your project's root directory, and inside it, include the Static and Media Storage locations:
+
+from django.conf import settings
+from storages.backends.s3boto3 import S3Boto3Storage
+
+
+class StaticStorage(S3Boto3Storage):
+   location = settings.STATICFILES_LOCATION
+
+
+class MediaStorage(S3Boto3Storage):
+   location = settings.MEDIAFILES_LOCATION
+5. Finally, push these changes on Github.
+
+git add .
+git commit -m "Your commit message"
+git push
+
+
+##  Features
+
+###  Core Features
 - **Product Categories**: Clothing Essentials, Homeware, Special Offers.
 - **Search Functionality**: Real-time product search using keywords.
 - **User Authentication**: Register, login, and logout via **Django Allauth**.
@@ -408,7 +693,7 @@ profiles/views.py                        25      0   100%
 1. **Clone this repository**
 
 bash
-git clone https://github.com/yourusername/my_collections.git
+git clone https://github.com/Friday79/my_collections.git
 cd my_collections
 Create a virtual environment
 
