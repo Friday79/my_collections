@@ -8,6 +8,49 @@ In the bag we will see all the product we have added to the bag,then we can edit
 **IMPORTANT COMMENT**
 - Database_url code was in settings.py which was destrimental to this project but have been remove from settings.py
 
+## Table of Contents
+
+- [My_Collections – Django E-commerce Platform](#my_collections--django-e-commerce-platform)
+- [Important Comment](#important-comment)
+- [E-Commerce Business Model for MyCollection](#e-commerce-business-model-for-mycollection)
+  - [Business Overview](#business-overview)
+  - [Value Proposition](#value-proposition)
+  - [Target Customers](#target-customers)
+  - [Product Offering](#product-offering)
+  - [Revenue Streams](#revenue-streams)
+  - [Marketing Strategy](#marketing-strategy)
+  - [Operations Model](#operations-model)
+  - [Cost Structure](#cost-structure)
+  - [Competitive Advantage](#competitive-advantage)
+- [Live Site](#-live-site)
+- [Screenshots](#-screenshots)
+- [Social Media Marketing](#social-media-marketing)
+- [Flowchart](#flowchart)
+- [Agile Method](#agile-method)
+- [Testing](#testing)
+  - [CSS Testing](#css-testing)
+  - [HTML Validation](#html-validation)
+  - [JavaScript (JSHint) Testing](#jshint-stripe-testing)
+  - [Python Testing & Coverage Reports](#python-testing--coverage-reports)
+- [Deployment](#deployment)
+- [How To Use This Project](#how-to-use-this-project)
+  - [Fork GitHub Repository](#fork-github-repository)
+  - [Clone GitHub Repository](#clone-github-repository)
+- [Project Setup After Forking or Cloning](#project-set-up-after-forking-or-cloning)
+- [Deployment to Heroku](#deployment-to-heroku)
+- [AWS S3 Setup](#aws-bucket-creation)
+- [Features](#features)
+  - [Core Features](#core-features)
+  - [User Features](#-user-features)
+- [Bugs](#bug)
+- [Technologies Used](#️-technologies-used)
+- [Installation Instructions](#️-installation-instructions)
+- [Testing](#-testing)
+- [Project Structure](#-project-structure)
+- [Admin Access](#-admin-access)
+- [Deployment Summary](#-deployment)
+- [Acknowledgments](#-acknowledgments)
+
 **E-Commerce Business Model for MyCollection**
 
 1. ## Business Overview
