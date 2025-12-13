@@ -213,7 +213,7 @@ MyCollection provides:
 
 ## 🔗 Live Site
 
-👉 [Deployed Site on Heroku](https://mycollections-379ea5dbbc8f.herokuapp.com/)
+ [Deployed Site on Heroku](https://mycollections-379ea5dbbc8f.herokuapp.com/)
     [Stripe Payments](https://stripe.com)
     [GitHub Repository](https://github.com/Friday79/my_collections)
 
@@ -263,7 +263,7 @@ MyCollection provides:
 
 - ![Image](https://github.com/user-attachments/assets/e9d64aa4-dfaf-4c3d-9009-39117bb5eb82)
 
--## Html validation.
+- ## Html validation.
 - ![image](https://github.com/user-attachments/assets/fb66c9b5-742e-4675-a9f6-5a7eeb1b8029)
 
 - ![image](https://github.com/user-attachments/assets/9065710c-85d0-46d4-bfb8-e0a5d2cde0b6)
@@ -630,26 +630,26 @@ pip3 freeze > requirements.txt
 3. In settings.py, we need to set cache control, set bucket configurations, set static and media files location, and override static and media URLs in production. We'll only want to do this on Heroku, so add an if statement as well.
 
 if 'USE_AWS' in os.environ:
-   # Cache control
+   ## Cache control
    AWS_S3_OBJECT_PARAMETERS = {
       'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
       'CacheControl': 'max-age=94608000',
    }
 
-   # Bucket Config
+   ## Bucket Config
    AWS_STORAGE_BUCKET_NAME = 'YOUR_BUCKET_NAME'
    AWS_S3_REGION_NAME = 'YOUR_REGION'
    AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
    AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
    AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
 
-   # Static and media files
+   ## Static and media files
    STATICFILES_STORAGE = 'custom_storages.StaticStorage'
    STATICFILES_LOCATION = 'static'
    DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
    MEDIAFILES_LOCATION = 'media' 
 
-   # Override static and media URLs in production
+   ## Override static and media URLs in production
    STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
    MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
 Set the Config Vars on Heroku. On your app's dashboard on Heroku, go to Settings and click Reveal Convig Vars. Set this variables:
@@ -690,7 +690,7 @@ git push
 - **Stripe Integration**: Secure checkout and payment process.
 - **Admin Panel**: CRUD operations for products, orders, and offers.
 
-### 👤 User Features
+###  User Features
 - Register / Log in / Log out
 - Login success message.
 - ![image](https://github.com/user-attachments/assets/bbcadf63-5f18-4f35-bb43-3675968969b0)
@@ -715,7 +715,7 @@ git push
 -  click on application then click on cookies
 -  Under the cookies, click your url then clear.
 
-## ⚙️ Technologies Used
+##  Technologies Used
 
 | Area             | Technology                         |
 |------------------|------------------------------------|
@@ -772,7 +772,7 @@ Kopiera
 Redigera
 python manage.py migrate
 python manage.py runserver
-🧪 Testing
+ ## Testing
 To run tests:
 
 bash
@@ -792,7 +792,7 @@ Bag logic
 
 User auth flows
 
-🗂️ Project Structure
+ ## Project Structure
 php
 Kopiera
 Redigera
@@ -807,7 +807,7 @@ my_collections/
 ├── media/              # Uploaded images via Aws3
 ├── my_collections/     # Project settings and URLs
 ├── manage.py
-🧑‍💻 Admin Access
+ ## Admin Access
 Superusers can:
 
 Add/edit/delete products
@@ -828,7 +828,7 @@ bash
 Kopiera
 Redigera
 /admin/
-🌐 Deployment
+## Deployment
 Steps:
 Push to GitHub
 
@@ -848,14 +848,14 @@ Redigera
 python manage.py migrate
 python manage.py collectstatic
 
-Product reviews and ratings
+## Product reviews and ratings
 - python3 manage.py runserver
 - on the nav bar click on product
 - Then you can review and rate the product
 
 
 
-🙌 Acknowledgments
+ ## Acknowledgments
 1. My mentor and the tutor team
 
 2.Code Institute - for learning materials, guidance and walkthrough project.
