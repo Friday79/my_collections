@@ -31,14 +31,14 @@ In the bag we will see all the product we have added to the bag,then we can edit
   - [CSS Testing](#css-testing)
   - [HTML Validation](#html-validation)
   - [JavaScript (JSHint) Testing](#jshint-stripe-testing)
-  - [Python Testing & Coverage Reports](#python-testing--coverage-reports)
+  - [Python Testing & Coverage Reports](#python-testing-&-coverage-reports)
 - [Deployment](#deployment)
 - [How To Use This Project](#how-to-use-this-project)
   - [Fork GitHub Repository](#fork-github-repository)
   - [Clone GitHub Repository](#clone-github-repository)
 - [Project Setup After Forking or Cloning](#project-set-up-after-forking-or-cloning)
 - [Deployment to Heroku](#deployment-to-heroku)
-- [AWS S3 Setup](#aws-bucket-creation)
+- [AWS bucket creation](#aws-bucket-creation)
 - [Features](#features)
   - [Core Features](#core-features)
   - [User Features](#-user-features)
@@ -48,7 +48,7 @@ In the bag we will see all the product we have added to the bag,then we can edit
 - [Testing](#-testing)
 - [Project Structure](#-project-structure)
 - [Admin Access](#-admin-access)
-- [Deployment Summary](#-deployment)
+- [Deployment Summary](#-deployment-summary)
 - [Acknowledgments](#-acknowledgments)
 
 **E-Commerce Business Model for MyCollection**
@@ -310,7 +310,7 @@ MyCollection provides:
 - ## jshint Stripe testing
 - ![image](https://github.com/user-attachments/assets/3a8d6440-bd57-4573-a629-d17acc032cb9)
 
-## Python Testing & Coverage Reports
+- ## Python Testing & Coverage Reports
 
 - ## Coverage Report BAG
 - ![image](https://github.com/user-attachments/assets/c3766e88-e073-4992-807b-9c4f4da0a660)
@@ -384,20 +384,20 @@ products/widgets.py                                      7      0   100%
 
 
 - Name                                  Stmts   Miss  Cover
----------------------------------------------------------
-profiles/__init__.py                      0      0   100%
-profiles/admin.py                         1      0   100%
-profiles/apps.py                          4      0   100%
-profiles/forms.py                        18      1    94%
-profiles/migrations/0001_initial.py       8      0   100%
-profiles/migrations/__init__.py           0      0   100%
-profiles/models.py                       21      0   100%
-profiles/test_forms.py                   23      0   100%
-profiles/test_models.py                  13      0   100%
-profiles/test_views.py                   33      0   100%
-profiles/tests.py                         1      0   100%
-profiles/urls.py                          3      0   100%
-profiles/views.py                        25      0   100%
+- ---------------------------------------------------------
+- profiles/__init__.py                      0      0   100%
+- profiles/admin.py                         1      0   100%
+- profiles/apps.py                          4      0   100%
+- profiles/forms.py                        18      1    94%
+- profiles/migrations/0001_initial.py       8      0   100%
+- profiles/migrations/__init__.py           0      0   100%
+- profiles/models.py                       21      0   100%
+- profiles/test_forms.py                   23      0   100%
+- profiles/test_models.py                  13      0   100%
+- profiles/test_views.py                   33      0   100%
+- profiles/tests.py                         1      0   100%
+- profiles/urls.py                          3      0   100%
+- profiles/views.py                        25      0   100%
 
 ## Deployment
 The project was developed using[Gitpod](https://www.gitpod.io/). workspace. The code was commited to  [Git](https://git-scm.com/). and pushed to GitHub using the terminal. The web application is deployed on Heroku as  [GitHub](https://github.com/your-username/my_collections). Pages is not able to host a Python project. Static and media files are being stored in AWS S3. The repository is hosted on Github.
@@ -550,7 +550,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 Set debug to be true only if there's a variable called development in the environment.
 
 DEBUG = 'DEVELOPMENT' in os.environ
-AWS Bucket Creation
+## AWS Bucket Creation
 All static and media files in this project are stored in [Amazon Web Services S3](https://aws.amazon.com/) bucket which is a cloud based storage service. You can create your own bucket by following these steps:
 
 1. Go to [Amazon Web Service website](https://aws.amazon.com/) and click on Create An AWS Account, or login if you already have an account.
