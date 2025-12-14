@@ -41,15 +41,14 @@ In the bag we will see all the product we have added to the bag,then we can edit
 - [AWS bucket creation](#aws-bucket-creation)
 - [Features](#features)
   - [Core Features](#core-features)
-  - [User Features](#-user-features)
+  - [User Features](#user-features)
 - [Bugs](#bug)
-- [Technologies Used](#️-technologies-used)
-- [Installation Instructions](#️-installation-instructions)
-- [Testing](#-testing)
-- [Project Structure](#-project-structure)
-- [Admin Access](#-admin-access)
-- [Deployment Summary](#-deployment-summary)
-- [Acknowledgments](#-acknowledgments)
+- [Technologies Used](#️technologies-used)
+- [Installation Instructions](#️installation-instructions)
+- [Project Structure](#project-structure)
+- [Admin Access](#admin-access)
+- [Deployment Summary](#deployment-summary)
+- [Acknowledgments](#acknowledgments)
 
 **E-Commerce Business Model for MyCollection**
 
@@ -301,7 +300,7 @@ MyCollection provides:
 - ![image](https://github.com/user-attachments/assets/7da69a55-4f2c-42ee-80c2-524818c46f7c)
 - ![image](https://github.com/user-attachments/assets/124726d3-ae09-4f7d-ab0d-a73d99ce2405)
 
-
+[Back To Top][#top]
 
 
 
@@ -310,9 +309,8 @@ MyCollection provides:
 - ## jshint Stripe testing
 - ![image](https://github.com/user-attachments/assets/3a8d6440-bd57-4573-a629-d17acc032cb9)
 
-- ## Python Testing & Coverage Reports
-
-- ## Coverage Report BAG
+## Python Testing & Coverage Reports
+## Coverage Report BAG
 - ![image](https://github.com/user-attachments/assets/c3766e88-e073-4992-807b-9c4f4da0a660)
 
 - Name                            Stmts   Miss  Cover
@@ -398,6 +396,8 @@ products/widgets.py                                      7      0   100%
 - profiles/tests.py                         1      0   100%
 - profiles/urls.py                          3      0   100%
 - profiles/views.py                        25      0   100%
+
+[Back To Top](#top)
 
 ## Deployment
 The project was developed using[Gitpod](https://www.gitpod.io/). workspace. The code was commited to  [Git](https://git-scm.com/). and pushed to GitHub using the terminal. The web application is deployed on Heroku as  [GitHub](https://github.com/your-username/my_collections). Pages is not able to host a Python project. Static and media files are being stored in AWS S3. The repository is hosted on Github.
@@ -681,6 +681,8 @@ git add .
 git commit -m "Your commit message"
 git push
 
+[Back To Top](#top)
+
 
 ##  Features
 
@@ -717,21 +719,88 @@ git push
 -  click on application then click on cookies
 -  Under the cookies, click your url then clear.
 
-##  Technologies Used
+Languages Used
+- [HTML5](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [Python](https://www.python.org/)
+## Libraries and Frameworks
+- [Django](https://www.djangoproject.com/) was used as web framework.
 
-- | Area             | Technology                         |
-- |------------------|------------------------------------|
-- | Framework        | Django 4.2                          |
-- | Frontend         | HTML5, CSS3, JavaScript, Bootstrap |
-- | Backend          | Python 3.12                        |
-- | Authentication   | Django Allauth                    |
-- | Payments         | Stripe                             |
-- | Media Storage    | Aws3                         |
-- | Deployment       | Heroku                             |
-- | Environment Vars | dj-database-url                  |
-- | Database         | PostgreSQL (Production), SQLite (Dev) |
+- [Django Template](https://jinja.palletsprojects.com/en/stable/) was used as a templating language for Django to display backend data to HTML.
 
----
+- [Bootstrap 5](https://getbootstrap.com/) was used throughout the website to help with styling and responsiveness.
+
+- [Google Fonts](https://fonts.google.com/) was used to import the font into the html file, and were used on all parts of the site.
+
+- [Font Awesome](https://fontawesome.com/) was used throughout the website to add icons for aesthetic and UX purposes.
+
+- [jQuery](https://jquery.com/) 3.6.0 was used as a JavaScript library to help writing less JavaScript code.
+
+## Packages / Dependencies Installed
+- [Django Allauth](https://django-allauth.readthedocs.io/en/latest/) was used for user authentication, registration, and account management.
+
+- [Django Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/) Form was used to control the rendering of the forms.
+
+-[Django Countries](https://pypi.org/project/django-countries/) was used to provide country choices for use with forms and a country field for models.
+
+- [Pillow](https://pillow.readthedocs.io/en/stable/) was used to add image processing capabilities.
+
+- [Gunicorn](https://gunicorn.org/) was used as Python WSGI HTTP Server for UNIX to support the deployment of Django application.
+
+## Database Management
+- [SQLite](https://sqlite.org/index.html) was used as a single-file database during development.
+
+- [Heroku Postgres](https://www.heroku.com/postgres/) database was used in production, as a service based on PostgreSQL provided by Heroku.
+
+## Payment Service
+- [Stripe](https://stripe.com/en-nl) was used to process all online payments transactions.
+## Cloud Storage
+- [Amazon Web Service S3](https://aws.amazon.com/s3/) was used to store all static and media files in production.
+## Tools and Programs
+- [Git](https://git-scm.com/)
+
+ - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
+- [Gitpod](https://www.gitpod.io/)
+
+ - GitPod was used for writing code, committing, and then pushing to GitHub.
+- [GitHub](https://github.com/)
+ - GitHub was used to store the projects code after being pushed from Git.
+
+- [Heroku](https://www.heroku.com/)
+
+ - Heroku was used to deploy the website.
+
+
+- [Chrome DevTools](https://developer.chrome.com/docs/devtools/) was used during development process for code review and to test responsiveness.
+- [W3C Markup Validator](https://validator.w3.org/)
+
+ - W3C Markup Validator was used to validate the HTML code.
+W3C CSS Validator
+
+- [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) was used to validate the CSS code.
+- [JSHint](https://jshint.com/)
+
+ - The JSHints JavaScript Code Quality Tool was used to validate the site's JavaScript code.
+- [Favicon.io](https://favicon.io/) was used to create the site favicon.
+
+[Back To Top](#top)
+
+## Technologies Used
+
+| Area             | Technology                         |
+|------------------|------------------------------------|
+| Framework        | Django 4.2                          |
+| Frontend         | HTML5, CSS3, JavaScript, Bootstrap |
+| Backend          | Python 3.12                        |
+| Authentication   | Django Allauth                    |
+| Payments         | Stripe                             |
+| Media Storage    | Aws3                         |
+| Deployment       | Heroku                             |
+| Environment Vars | dj-database-url                  |
+| Database         | PostgreSQL (Production), SQLite (Dev) |
+
+[Back To Top](#top)
 
 ## 🛠️ Installation Instructions
 
@@ -774,7 +843,7 @@ Kopiera
 Redigera
 python manage.py migrate
 python manage.py runserver
- ## Testing
+## Testing
 To run tests:
 
 bash
@@ -794,7 +863,7 @@ Bag logic
 
 User auth flows
 
- ## Project Structure
+## Project Structure
 php
 Kopiera
 Redigera
@@ -809,7 +878,7 @@ my_collections/
 ├── media/              # Uploaded images via Aws3
 ├── my_collections/     # Project settings and URLs
 ├── manage.py
- ## Admin Access
+## Admin Access
 Superusers can:
 
 Add/edit/delete products
@@ -857,9 +926,8 @@ python manage.py collectstatic
 
 
 
- ## Acknowledgments
+## Acknowledgments
 1. My mentor and the tutor team
-
-2.Code Institute - for learning materials, guidance and walkthrough project.
+2. Code Institute - for learning materials, guidance and walkthrough project.
 
 
