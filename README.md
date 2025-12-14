@@ -43,8 +43,7 @@ In the bag we will see all the product we have added to the bag,then we can edit
   - [Core Features](#core-features)
   - [User Features](#user-features)
 - [Bugs](#bug)
-- [Languages Used](#️languages-used)
-- [Installation Instructions](#️installation-instructions)
+- 
 - [Project Structure](#project-structure)
 - [Admin Access](#admin-access)
 
@@ -802,7 +801,7 @@ W3C CSS Validator
 
 [Back To Top](#top)
 
-## 🛠️ Installation Instructions
+## Installation Instructions
 
 1. **Clone this repository**
 
