@@ -31,7 +31,7 @@ In the bag we will see all the product we have added to the bag,then we can edit
   - [CSS Testing](#css-testing)
   - [HTML Validation](#html-validation)
   - [JavaScript (JSHint) Testing](#jshint-stripe-testing)
-  - [Python Testing & Coverage Reports](#python-testing-&-coverage-reports)
+  - [Coverage Report Bag](#coverage-report-bag)
 - [Deployment](#deployment)
 - [How To Use This Project](#how-to-use-this-project)
   - [Fork GitHub Repository](#fork-github-repository)
@@ -43,11 +43,11 @@ In the bag we will see all the product we have added to the bag,then we can edit
   - [Core Features](#core-features)
   - [User Features](#user-features)
 - [Bugs](#bug)
-- [Technologies Used](#️technologies-used)
+- [Languages Used](#️languages-used)
 - [Installation Instructions](#️installation-instructions)
 - [Project Structure](#project-structure)
 - [Admin Access](#admin-access)
-- [Deployment Summary](#deployment-summary)
+
 - [Acknowledgments](#acknowledgments)
 
 **E-Commerce Business Model for MyCollection**
