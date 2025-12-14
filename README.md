@@ -299,7 +299,7 @@ MyCollection provides:
 - ![image](https://github.com/user-attachments/assets/7da69a55-4f2c-42ee-80c2-524818c46f7c)
 - ![image](https://github.com/user-attachments/assets/124726d3-ae09-4f7d-ab0d-a73d99ce2405)
 
-[Back To Top][#top]
+- [Back To Top][#top]
 
 
 
@@ -396,7 +396,7 @@ products/widgets.py                                      7      0   100%
 - profiles/urls.py                          3      0   100%
 - profiles/views.py                        25      0   100%
 
-[Back To Top](#top)
+- [Back To Top](#back-to-top)
 
 ## Deployment
 The project was developed using[Gitpod](https://www.gitpod.io/). workspace. The code was commited to  [Git](https://git-scm.com/). and pushed to GitHub using the terminal. The web application is deployed on Heroku as  [GitHub](https://github.com/your-username/my_collections). Pages is not able to host a Python project. Static and media files are being stored in AWS S3. The repository is hosted on Github.
@@ -680,7 +680,7 @@ git add .
 git commit -m "Your commit message"
 git push
 
-[Back To Top](#top)
+- [Back To Top](#back-to-top)
 
 
 ##  Features
@@ -741,7 +741,7 @@ git push
 
 - [Django Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/) Form was used to control the rendering of the forms.
 
--[Django Countries](https://pypi.org/project/django-countries/) was used to provide country choices for use with forms and a country field for models.
+- [Django Countries](https://pypi.org/project/django-countries/) was used to provide country choices for use with forms and a country field for models.
 
 - [Pillow](https://pillow.readthedocs.io/en/stable/) was used to add image processing capabilities.
 
@@ -783,7 +783,7 @@ W3C CSS Validator
  - The JSHints JavaScript Code Quality Tool was used to validate the site's JavaScript code.
 - [Favicon.io](https://favicon.io/) was used to create the site favicon.
 
-[Back To Top](#top)
+- [Back To Top](#back-to-top)
 
 ## Technologies Used
 
