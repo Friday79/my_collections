@@ -719,7 +719,7 @@ git push
 -  click on application then click on cookies
 -  Under the cookies, click your url then clear.
 
-Languages Used
+## Languages Used
 - [HTML5](https://developer.mozilla.org/en-US/docs/Web/HTML)
 - [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS)
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
