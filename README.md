@@ -5,7 +5,7 @@ At the Nav we have all product ,that when we click , we can choose the product w
 There is a shop now link that when clicked, it will take us to the store. If any product is clicked, then in the product details, we can **review, select seize,rate, increase quantity** with the increment and decrement button. At the bottom of the product detail page we click on add to bag, to add the product to bag and click on keep shopping to continue shopping. 
 In the bag we will see all the product we have added to the bag,then we can edit or delete product before we click on checkout at the bottom of the page, which then take us to the payment section,where we will fill in our shipping information and make payment, then **Receive Email Comfirmation** after payment.
 
-**IMPORTANT COMMENT**
+## IMPORTANT COMMENT
 - Database_url code was in settings.py which was destrimental to this project but have been remove from settings.py
 
 ## Table of Contents
@@ -309,6 +309,8 @@ MyCollection provides:
 
 - ## jshint Stripe testing
 - ![image](https://github.com/user-attachments/assets/3a8d6440-bd57-4573-a629-d17acc032cb9)
+
+## Python Testing & Coverage Reports
 
 - ## Coverage Report BAG
 - ![image](https://github.com/user-attachments/assets/c3766e88-e073-4992-807b-9c4f4da0a660)
@@ -682,7 +684,7 @@ git push
 
 ##  Features
 
-###  Core Features
+##  Core Features
 - **Product Categories**: Clothing Essentials, Homeware, Special Offers.
 - **Search Functionality**: Real-time product search using keywords.
 - **User Authentication**: Register, login, and logout via **Django Allauth**.
@@ -690,7 +692,7 @@ git push
 - **Stripe Integration**: Secure checkout and payment process.
 - **Admin Panel**: CRUD operations for products, orders, and offers.
 
-###  User Features
+##  User Features
 - Register / Log in / Log out
 - Login success message.
 - ![image](https://github.com/user-attachments/assets/bbcadf63-5f18-4f35-bb43-3675968969b0)
@@ -717,17 +719,17 @@ git push
 
 ##  Technologies Used
 
-| Area             | Technology                         |
-|------------------|------------------------------------|
-| Framework        | Django 4.2                          |
-| Frontend         | HTML5, CSS3, JavaScript, Bootstrap |
-| Backend          | Python 3.12                        |
-| Authentication   | Django Allauth                    |
-| Payments         | Stripe                             |
-| Media Storage    | Aws3                         |
-| Deployment       | Heroku                             |
-| Environment Vars | dj-database-url                  |
-| Database         | PostgreSQL (Production), SQLite (Dev) |
+- | Area             | Technology                         |
+- |------------------|------------------------------------|
+- | Framework        | Django 4.2                          |
+- | Frontend         | HTML5, CSS3, JavaScript, Bootstrap |
+- | Backend          | Python 3.12                        |
+- | Authentication   | Django Allauth                    |
+- | Payments         | Stripe                             |
+- | Media Storage    | Aws3                         |
+- | Deployment       | Heroku                             |
+- | Environment Vars | dj-database-url                  |
+- | Database         | PostgreSQL (Production), SQLite (Dev) |
 
 ---
 
