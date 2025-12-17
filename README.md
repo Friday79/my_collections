@@ -928,6 +928,6 @@ python manage.py collectstatic
 
 ## Acknowledgments
 1. My mentor and the tutor team
-2. Code Institute - for learning materials, guidance and walkthrough project.
+2. Code Institute - for learning materials, guidance and walkthrough project.Walkthrough project was helpful for this project
 
 - [Back To Top](#top)
