@@ -16,6 +16,9 @@
         <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
             <div class="image-container my-5">
                 {% if product.image %}
+                {% if product.is_on_sale %}
+                    <span class="badge bg-danger position-absolute top-0 start-0 me-1 py-1 px-2 text-white" style="font-size: 0.65rem; border-radius: 8px;">SALE!!!</span>
+                {% endif %}
                     <a href="{{ product.image.url }}" target="_blank" rel="noopener">
                         <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
                     </a>
@@ -35,7 +38,7 @@
                         ${{ product.sale_price }}
                         <small class="text-muted"><del>${{ product.price }}</del></small>
                     </p>
-                    <span class="badge bg-danger">{{ product.discount_percentage }}% OFF</span>
+                    <span class="badge bg-danger text-white">{{ product.discount_percentage }}% OFF</span>
                 {% else %}
                     <p class="lead mb-0 text-left font-weight-bold">${{ product.price }}</p>
                 {% endif %}

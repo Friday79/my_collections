@@ -57,7 +57,7 @@
                             <div class="card h-100 border-0">
                                 {% if product.image %}
                                 {% if product.is_on_sale %}
-                                    <span class="badge bg-danger position-absolute top-0 start-0 me-1 py-1 px-2" style="font-size: 0.65rem; border-radius: 8px;">SALE!!!</span>
+                                    <span class="badge bg-danger position-absolute top-0 start-0 me-1 py-1 px-2 text-white" style="font-size: 0.65rem; border-radius: 8px;">SALE!!!</span>
                                 {% endif %}
                                 <a href="{% url 'product_detail' product.id %}">
                                     <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
@@ -84,7 +84,7 @@
                                                         ${{ product.sale_price }}
                                                     </span>
                                                     {% if product.discount_percentage %}
-                                                        <span class="badge bg-danger">
+                                                        <span class="badge bg-danger text-white">
                                                             {{ product.discount_percentage }}% OFF
                                                         </span>
                                                     {% endif %}

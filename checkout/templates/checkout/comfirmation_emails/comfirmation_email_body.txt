@@ -1,22 +1,47 @@
-Hello {{ order.full_name }}!
+Hello {{ order.full_name }},
 
-This is a confirmation of your order at My_Collectios. Your order information is below:
+Thank you for your order at My_Collections! 🎉  
+Your order has been received and is now being processed.
 
+--------------------------------
+ORDER SUMMARY
+--------------------------------
 Order Number: {{ order.order_number }}
 Order Date: {{ order.date }}
 
+{% for item in order.lineitems.all %}
+- {{ item.product.name }} (Size: {{ item.product_size|default:"N/A" }})  
+  Quantity: {{ item.quantity }}  
+  Item Total: ${{ item.lineitem_total }}
+{% endfor %}
+
+--------------------------------
+DELIVERY DETAILS
+--------------------------------
+{{ order.street_address1 }}
+{% if order.street_address2 %}{{ order.street_address2 }}{% endif %}
+{{ order.town_or_city }}
+{{ order.county }}
+{{ order.postcode }}
+{{ order.country }}
+
+--------------------------------
+CONTACT DETAILS
+--------------------------------
+Phone: {{ order.phone_number }}
+Email: {{ order.email }}
+
+--------------------------------
+ORDER TOTALS
+--------------------------------
 Order Total: ${{ order.order_total }}
 Delivery: ${{ order.delivery_cost }}
 Grand Total: ${{ order.grand_total }}
 
-Your order will be shipped to {{ order.street_address1 }} in {{ order.town_or_city }}, {{ order.country }}.
+If you have any questions, please contact us at {{ contact_email }}.
 
-We've got your phone number on file as {{ order.phone_number }}.
+Thank you for shopping with My_Collections ❤️  
+We hope to see you again soon!
 
-If you have any questions, feel free to contact us at {{ contact_email }}.
-
-Thank you for your order!
-
-Sincerely,
-
-My_Collections
+Kind regards,  
+**My_Collections Team**
