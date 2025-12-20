@@ -6,8 +6,6 @@ At the Nav we have all product ,that when we click , we can choose the product w
 There is a shop now link that when clicked, it will take us to the store. If any product is clicked, then in the product details, we can **review, select seize,rate, increase quantity** with the increment and decrement button. At the bottom of the product detail page we click on add to bag, to add the product to bag and click on keep shopping to continue shopping. 
 In the bag we will see all the product we have added to the bag,then we can edit or delete product before we click on checkout at the bottom of the page, which then take us to the payment section,where we will fill in our shipping information and make payment, then **Receive Email Comfirmation** after payment.
 
-## IMPORTANT COMMENT
-- Database_url code was in settings.py which was destrimental to this project but have been remove from settings.py
 
 ## Table of Contents
 
@@ -224,7 +222,10 @@ MyCollection provides:
 - Home Page
 - ![image](https://github.com/user-attachments/assets/5eb821da-d9d6-453d-a6ea-55671820b91f)
 
-- ![image](https://github.com/user-attachments/assets/d2b7e597-3626-4734-be36-e9f7bf9259a5)
+- ![image](https://github.com/user-attachments/assets/
+d2b7e597-3626-4734-be36-e9f7bf9259a5)
+
+- Display to the shopper the product categories available, providing a link to each category.
 
 - Search Results
 - ![image](https://github.com/user-attachments/assets/0d0424a8-c238-46e1-856e-ddef0b788f2d)
@@ -239,20 +240,59 @@ MyCollection provides:
 **Wishlist**
 - ![image](https://github.com/user-attachments/assets/56557a9c-c8a9-4997-a058-49dbcbf29803)
 
+- Enable user to choose a wish product,then later move it to bag or remove from wishlist
+
 
 **Profile**
 - ![image](https://github.com/user-attachments/assets/a4240cfc-a4c6-4f88-bf7a-d908342ea724)
 
+- Provide a form for the registered shopper to update their default information.
+
+- An order history section is present with all registered shopper's past orders information.
+
 
 - Shopping Bag
-- ![image](https://github.com/user-attachments/assets/5f2ebd43-e33f-44ca-b2ce-ff851fb07540)
+- ![image](https://github.com/user-attachments/assets/
+5f2ebd43-e33f-44ca-b2ce-ff851fb07540)
+
+- A message alerts the user in case the free delivery threshold has not been reached, displaying the amount left.
+
+- Display all products currently on the shopping bag and their information.
+
+- Allow the user to update the product quantity or remove the product from the shopping bag.
+
+- Display the current total cost including the bag total and delivery costs.
+
+- Provide a "Keep Shopping" button to go back to the products.
+
+- A button to checkout is provided for the shopper to finish the purchase.
 
 - Stripe Checkout
 - ![image](https://github.com/user-attachments/assets/bee01ffd-5d4d-4272-a785-c0b2c6ad1e5f)
 
+- Provide a checkout form for the shopper to complete the purchase and provide the necessary contact, shipping and payment information.
+
+- Display an order summary listing all the products to be purchased and their total cost including the bag total and delivery costs.
+
+- Provide a link back to the shopping bag in the case the shopper would like to adjust the products in the shopping bag.
+
+- A message is displayed, informing the shopper the amount to be charged on the provided card.
+
+- Descriptive error messages are displayed in case there is any issue with the payment information provided.
+
+- A button is clearly available for the shopper to complete the order.
+
+- Stripe webhook handler is created in the backend to pass the order information in the case the browser crashes once the checkout completion.
+
 
 **Order Receipt**
 - ![image](https://github.com/user-attachments/assets/d6478eaa-f603-443e-abe0-04798b8833b3)
+
+- Display the order and shopper information to allow the shopper to confirm that the information provided is correct.
+
+- Additionally, informs the shopper that an email has been sent to the email address provided with the same information.
+
+- A link to the organizations we would like the shoppers to support is provided at the bottom of the page.
 
 - Admin Dashboard
 - ![image](https://github.com/user-attachments/assets/15bd0a0f-0ad8-4b08-b531-c1298f40af09)
@@ -868,6 +908,7 @@ User auth flows
 - Kopiera
 - Redigera
 - my_collections/
+
 - │
 - ├── bag/                # Shopping bag logic
 - ├── checkout/           # Stripe integration
@@ -878,6 +919,7 @@ User auth flows
 - ├── media/              # Uploaded images via Aws3
 - ├── my_collections/     # Project settings and URLs
 - ├── manage.py
+
 ## Admin Access
 Superusers can:
 
@@ -924,10 +966,14 @@ python manage.py collectstatic
 - on the nav bar click on product
 - Then you can review and rate the product
 
+## Code
+- The code in Code Institute's video on the Boutique Ado project was used as the main reference point to set up an e-commerce / online store project using HTML, CSS, JS, Python+Django, PostgreSQL database, Stripe, and AWS S3 as storage.
+
 
 
 ## Acknowledgments
 1. My mentor and the tutor team
-2. Code Institute - for learning materials, guidance and walkthrough project.Walkthrough project was helpful for this project
+2. Code Institute - for learning materials, guidance and walkthrough project. was helpful for this project
+3. My partner, for her unconditional love, help and continued support through the whole course. Without you I wouldn't been able to make this happen.
 
 - [Back To Top](#top)
