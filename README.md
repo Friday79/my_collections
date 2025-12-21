@@ -300,7 +300,7 @@ d2b7e597-3626-4734-be36-e9f7bf9259a5)
 - ![image](https://github.com/user-attachments/assets/15bd0a0f-0ad8-4b08-b531-c1298f40af09)
 
 ## 404 ERROR PAGE
-- [image]https://github.com/user-attachments/assets/b3e0fd51-d774-4e7c-8030-53181b4225ac
+- ![image](https://github.com/user-attachments/assets/391161ac-a5bc-4c8f-adc9-9052c24cf8db)
 
 - Provided information to the shopper in case the address entered cannot be found.
 
