@@ -343,13 +343,13 @@ d2b7e597-3626-4734-be36-e9f7bf9259a5)
 - ## Skeleton
 - ## Wireframes
 - [Balsamiq](https://balsamiq.com/) has been used to showcase the appearance of the site and display the placement of the different elements whitin the pages.
-- [Home Page](wireframe-home.png)
-- [Products Page](wireframe-product.png)
-- [Product Detail Page](wireframe-product-details.png)
-- [Shopping Bag Page](wireframe-bag.png)
-- [Checkout Page](wireframe-checkout.png)
-- [Profile Page](wireframe-profile.png)
-- [Wishlist Page](wireframe-wishlist.png)
+- ![image](https://github.com/user-attachments/assets/6a29f0b2-aa96-411e-b9fc-01196b62883d)
+- ![image](https://github.com/user-attachments/assets/2a81ac94-d257-4c83-aaaa-7198ba34bda5)
+- ![image](https://github.com/user-attachments/assets/13923cf3-0d96-4d95-863d-4688808a3787)
+- ![image](https://github.com/user-attachments/assets/19e27ff6-5ebc-4327-a48f-39100bede94e)
+- ![image](https://github.com/user-attachments/assets/5e4f73fd-e2d9-481c-9587-7e4b772f447d)
+- ![image](https://github.com/user-attachments/assets/d65ed7fd-5cf9-4b35-9d42-9df69def8a95)
+- ![image](https://github.com/user-attachments/assets/9c46e299-ef38-4caf-8c36-9cbed9c5b4f5)
 
 - [Back To Top][#top]
 
