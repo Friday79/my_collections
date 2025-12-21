@@ -251,7 +251,7 @@ d2b7e597-3626-4734-be36-e9f7bf9259a5)
 - An order history section is present with all registered shopper's past orders information.
 
 
-- Shopping Bag
+## Shopping Bag
 - ![image](https://github.com/user-attachments/assets/
 5f2ebd43-e33f-44ca-b2ce-ff851fb07540)
 
@@ -267,7 +267,7 @@ d2b7e597-3626-4734-be36-e9f7bf9259a5)
 
 - A button to checkout is provided for the shopper to finish the purchase.
 
-- Stripe Checkout
+## Stripe Checkout
 - ![image](https://github.com/user-attachments/assets/bee01ffd-5d4d-4272-a785-c0b2c6ad1e5f)
 
 - Provide a checkout form for the shopper to complete the purchase and provide the necessary contact, shipping and payment information.
@@ -294,8 +294,15 @@ d2b7e597-3626-4734-be36-e9f7bf9259a5)
 
 - A link to the organizations we would like the shoppers to support is provided at the bottom of the page.
 
-- Admin Dashboard
+## Admin Dashboard
 - ![image](https://github.com/user-attachments/assets/15bd0a0f-0ad8-4b08-b531-c1298f40af09)
+
+## 404 ERROR PAGE
+- [image]https://github.com/user-attachments/assets/b3e0fd51-d774-4e7c-8030-53181b4225ac
+
+- Provided information to the shopper in case the address entered cannot be found.
+
+- A link to come back to the products is present.
 
 - ## Css Testing
 
@@ -330,6 +337,17 @@ d2b7e597-3626-4734-be36-e9f7bf9259a5)
 
 - ## FLOWCHART
 - ![image](https://github.com/user-attachments/assets/def88c09-bbec-4060-b7ea-75c5ca940305)
+
+## Skeleton
+## Wireframes
+- [Balsamiq](https://balsamiq.com/) has been used to showcase the appearance of the site and display the placement of the different elements whitin the pages.
+- [Home Page](wireframes/home.png)
+- [Products Page](wireframes/products.png)
+- [Product Detail Page](wireframes/product_detail.png)
+- [Shopping Bag Page](wireframes/bag.png)
+- [Checkout Page](wireframes/checkout.png)
+- [Profile Page](wireframes/profile.png)
+- [Wishlist Page](wireframes/wishlist.png)
 
 - ## Agile method
 - ![image](https://github.com/user-attachments/assets/490dc086-d1f8-41c0-b267-3658019c60b7)
@@ -738,18 +756,28 @@ git push
 - Register / Log in / Log out
 - Login success message.
 - ![image](https://github.com/user-attachments/assets/bbcadf63-5f18-4f35-bb43-3675968969b0)
+
 - Browse and search products
 - Searching an empty bar
+
 - ![image](https://github.com/user-attachments/assets/e12006ea-f970-4117-91df-7a6b62fde12a)
+
 - Add items to shopping bag
+
 - ![image](https://github.com/user-attachments/assets/7eed775d-c644-495d-a080-fccfec83da72)
+
 - Update or remove items
+
 - ![image](https://github.com/user-attachments/assets/5acfe8ee-d135-4b67-ac9e-1dcbcedb0371)
 - ![image](https://github.com/user-attachments/assets/b2eec2f3-bee1-4644-a6c5-7728acc2bf5e)
+
 - Proceed to secure checkout
+
 - ![image](https://github.com/user-attachments/assets/62cac024-ef3a-491d-8df3-f532c07927b3)
+
 - Receive email confirmation after payment
 - Message sent confirmation on contact page.
+
 - ![image](https://github.com/user-attachments/assets/7453d58a-f32c-430b-9ff9-a482371239e6)
 
 ## BUG
