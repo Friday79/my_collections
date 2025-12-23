@@ -176,7 +176,7 @@ MyCollection provides:
 
 - Contact form
 
-- Email support (your email: fridexcool@gmail.com
+- Email support ( fuwuigbe@gmail.com
 )
 
 8. ## Cost Structure
@@ -343,7 +343,8 @@ d2b7e597-3626-4734-be36-e9f7bf9259a5)
 - ## Skeleton
 - ## Wireframes
 - [Balsamiq](https://balsamiq.com/) has been used to showcase the appearance of the site and display the placement of the different elements whitin the pages.
-- ![image](https://github.com/user-attachments/assets/6a29f0b2-aa96-411e-b9fc-01196b62883d)
+- Checkout Page
+- ![image](https://github.com/user-attachments/assets/fb304f67-7cae-437c-83c7-ed7b729f8b9b)
 - ![image](https://github.com/user-attachments/assets/2a81ac94-d257-4c83-aaaa-7198ba34bda5)
 - ![image](https://github.com/user-attachments/assets/13923cf3-0d96-4d95-863d-4688808a3787)
 - ![image](https://github.com/user-attachments/assets/19e27ff6-5ebc-4327-a48f-39100bede94e)
@@ -352,6 +353,10 @@ d2b7e597-3626-4734-be36-e9f7bf9259a5)
 - ![image](https://github.com/user-attachments/assets/9c46e299-ef38-4caf-8c36-9cbed9c5b4f5)
 
 - [Back To Top](#top)
+
+- ## Database Model
+The database model has been designed using drawsql. The type of database being used for the is relational database being managed using SQLite3 during development and deployed using [PostgreSQL](https://www.postgresql.org/).
+- ![image](https://github.com/user-attachments/assets/7bb4bf62-a8c3-4cf0-9bf3-b835f579fe43)
 
 - ## Agile method
 - ![image](https://github.com/user-attachments/assets/490dc086-d1f8-41c0-b267-3658019c60b7)
