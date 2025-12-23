@@ -176,7 +176,7 @@ MyCollection provides:
 
 - Contact form
 
-- Email support ( fuwuigbe@gmail.com
+- Email support ( YOUR EMAIL
 )
 
 8. ## Cost Structure
@@ -486,10 +486,12 @@ By cloning a GitHub repository you can create a local copy on your computer of t
 5. Open Git Bash.
 6. Change the current working directory to the location where you want the cloned directory to be made.
 7. Type git clone, and then paste the URL you copied in Step 4.
-run git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+```bash
+git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 8. 
 Press Enter. Your local clone will be created.
-run git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+```bash
+git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 > Cloning into `CI-Clone`...
 > remote: Counting objects: 10, done.
 > remote: Compressing objects: 100% (8/8), done.
