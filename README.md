@@ -330,7 +330,7 @@ MyCollection provides:
 
 
 - ## Facebook Business Marketing page For B2C
--  [Mock Facebook Business Page](https://www.facebook.com/people/mycollections)
+-  `[Mock Facebook Business Page](https://www.facebook.com/people/mycollections)`
 - ![image](https://github.com/user-attachments/assets/de385d74-5cf2-475c-b8f8-45b5b62e6fe3)
 
 - ## FLOWCHART
@@ -463,7 +463,7 @@ products/widgets.py                                      7      0   100%
 - [Back To Top](#top)
 
 ## Deployment
-The project was developed using[Gitpod](https://www.gitpod.io/). workspace. The code was commited to  [Git](https://git-scm.com/). and pushed to GitHub using the terminal. The web application is deployed on Heroku as  [GitHub](https://github.com/your-username/my_collections). Pages is not able to host a Python project. Static and media files are being stored in AWS S3. The repository is hosted on Github.
+The project was developed using[Gitpod](https://www.gitpod.io/). workspace. The code was commited to  [Git](https://git-scm.com/). and pushed to GitHub using the terminal. The web application is deployed on Heroku as  `[GitHub](https://github.com/your-username/`my_collections). Pages is not able to host a Python project. Static and media files are being stored in AWS S3. The repository is hosted on Github.
 
 ## How To Use This Project
 To use and further develop this project you can either fork or clone the repository.
@@ -486,12 +486,11 @@ By cloning a GitHub repository you can create a local copy on your computer of t
 5. Open Git Bash.
 6. Change the current working directory to the location where you want the cloned directory to be made.
 7. Type git clone, and then paste the URL you copied in Step 4.
-```bash
-git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+
+git clone `https://github.com/YOUR-USERNAME/YOUR-REPOSITORY`
 8. 
 Press Enter. Your local clone will be created.
-```bash
-git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+`git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY`
 > Cloning into `CI-Clone`...
 > remote: Counting objects: 10, done.
 > remote: Compressing objects: 100% (8/8), done.
