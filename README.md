@@ -224,8 +224,6 @@ MyCollection provides:
 - Home Page
 - ![image](https://github.com/user-attachments/assets/5eb821da-d9d6-453d-a6ea-55671820b91f)
 
-- ![image](https://github.com/user-attachments/assets/
-d2b7e597-3626-4734-be36-e9f7bf9259a5)
 
 - Display to the shopper the product categories available, providing a link to each category.
 
@@ -254,8 +252,6 @@ d2b7e597-3626-4734-be36-e9f7bf9259a5)
 
 
 ## Shopping Bag
-- ![image](https://github.com/user-attachments/assets/
-5f2ebd43-e33f-44ca-b2ce-ff851fb07540)
 
 - A message alerts the user in case the free delivery threshold has not been reached, displaying the amount left.
 
@@ -490,10 +486,10 @@ By cloning a GitHub repository you can create a local copy on your computer of t
 5. Open Git Bash.
 6. Change the current working directory to the location where you want the cloned directory to be made.
 7. Type git clone, and then paste the URL you copied in Step 4.
-$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+run git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 8. 
 Press Enter. Your local clone will be created.
-$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+run git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 > Cloning into `CI-Clone`...
 > remote: Counting objects: 10, done.
 > remote: Compressing objects: 100% (8/8), done.
