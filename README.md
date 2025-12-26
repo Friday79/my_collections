@@ -43,7 +43,7 @@ In the bag we will see all the product we have added to the bag,then we can edit
   - [Core Features](#core-features)
   - [User Features](#user-features)
 - [Bugs](#bug)
-- 
+- [Language Used](#language-used)
 - [Project Structure](#project-structure)
 - [Admin Access](#admin-access)
 
@@ -798,7 +798,7 @@ git push
 -  click on application then click on cookies
 -  Under the cookies, click your url then clear.
 
-## Languages Used
+- ## Languages Used
 - [HTML5](https://developer.mozilla.org/en-US/docs/Web/HTML)
 - [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS)
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
