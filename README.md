@@ -340,19 +340,19 @@ MyCollection provides:
 - ## Wireframes
 - [Balsamiq](https://balsamiq.com/) has been used to showcase the appearance of the site and display the placement of the different elements whitin the pages.
 - Home Page
-- ![image](https://github.com/user-attachments/assets/fb304f67-7cae-437c-83c7-ed7b729f8b9b)
+- ![image](https://github.com/user-attachments/assets/5335b0e9-e369-42ac-a24d-9a3a0eb1b0f0)
 - Product
-- ![image](https://github.com/user-attachments/assets/2a81ac94-d257-4c83-aaaa-7198ba34bda5)
+- ![image](https://github.com/user-attachments/assets/6e6b455b-3d50-48d1-b41f-0c33b8a02ec7)
 - Checkout
 - ![image](https://github.com/user-attachments/assets/ad934ee7-4b8a-4e42-bc7c-16f6dc623a56)
 - Product Details
-- ![image](https://github.com/user-attachments/assets/19e27ff6-5ebc-4327-a48f-39100bede94e)
+- ![image](https://github.com/user-attachments/assets/e35b1226-36c2-4623-9fcc-ff37a646dab9)
 - My Profile
-- ![image](https://github.com/user-attachments/assets/5e4f73fd-e2d9-481c-9587-7e4b772f447d)
+- ![image](https://github.com/user-attachments/assets/f9cbfe93-e15e-4a19-bc3d-9796efa04c54)
 - Shopping Bag
-- ![image](https://github.com/user-attachments/assets/d65ed7fd-5cf9-4b35-9d42-9df69def8a95)
+- ![image](https://github.com/user-attachments/assets/5701a72f-474d-45ac-9405-b48414a1735c)
 - WishList Page
-- ![image](https://github.com/user-attachments/assets/9c46e299-ef38-4caf-8c36-9cbed9c5b4f5)
+- ![image](https://github.com/user-attachments/assets/38408280-682a-469d-8016-c946fa3497f7)
 
 - [Back To Top](#top)
 
