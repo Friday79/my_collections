@@ -10,7 +10,6 @@ In the bag we will see all the product we have added to the bag,then we can edit
 ## Table of Contents
 
 - [My_Collections – Django E-commerce Platform](#my_collections--django-e-commerce-platform)
-- [Important Comment](#important-comment)
 - [E-Commerce Business Model for MyCollection](#e-commerce-business-model-for-mycollection)
   - [Business Overview](#business-overview)
   - [Value Proposition](#value-proposition)
@@ -50,7 +49,7 @@ In the bag we will see all the product we have added to the bag,then we can edit
 
 - [Acknowledgments](#acknowledgments)
 
-**E-Commerce Business Model for MyCollection**
+- ## E-Commerce Business Model for MyCollection
 
 1. ## Business Overview
 

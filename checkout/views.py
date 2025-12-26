@@ -89,12 +89,12 @@ def checkout(request):
 
             request.session['save_info'] = 'save-info' in request.POST
             # Send email here
-            send_mail(
-                'Order confirmation',
-                "Thank you for your order! We are processing it now.",
-                settings.DEFAULT_FROM_EMAIL,
-                [request.POST['email']],
-            )
+            #send_mail(
+            #    'Order confirmation',
+            #    "Thank you for your order! We are processing it now.",
+            #    settings.DEFAULT_FROM_EMAIL,
+            #    [request.POST['email']],
+            #)
             return redirect(reverse('checkout_success', args=[order.order_number]))
         else:
             messages.error(request, 'There was an error with your form. \
