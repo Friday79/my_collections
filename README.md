@@ -339,13 +339,19 @@ MyCollection provides:
 - ## Skeleton
 - ## Wireframes
 - [Balsamiq](https://balsamiq.com/) has been used to showcase the appearance of the site and display the placement of the different elements whitin the pages.
-- Checkout Page
+- Home Page
 - ![image](https://github.com/user-attachments/assets/fb304f67-7cae-437c-83c7-ed7b729f8b9b)
+- Product
 - ![image](https://github.com/user-attachments/assets/2a81ac94-d257-4c83-aaaa-7198ba34bda5)
-- ![image](https://github.com/user-attachments/assets/13923cf3-0d96-4d95-863d-4688808a3787)
+- Checkout
+- ![image](https://github.com/user-attachments/assets/ad934ee7-4b8a-4e42-bc7c-16f6dc623a56)
+- Product Details
 - ![image](https://github.com/user-attachments/assets/19e27ff6-5ebc-4327-a48f-39100bede94e)
+- My Profile
 - ![image](https://github.com/user-attachments/assets/5e4f73fd-e2d9-481c-9587-7e4b772f447d)
+- Shopping Bag
 - ![image](https://github.com/user-attachments/assets/d65ed7fd-5cf9-4b35-9d42-9df69def8a95)
+- WishList Page
 - ![image](https://github.com/user-attachments/assets/9c46e299-ef38-4caf-8c36-9cbed9c5b4f5)
 
 - [Back To Top](#top)
