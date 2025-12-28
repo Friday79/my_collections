@@ -776,6 +776,22 @@ git push
 - Login success message.
 - ![image](https://github.com/user-attachments/assets/bbcadf63-5f18-4f35-bb43-3675968969b0)
 
+- ## User Authentication
+
+This project uses Django Allauth for authentication.
+
+- Users must confirm their email address before logging in
+- A confirmation email is sent upon registration
+- Admin users can log in via Django admin without confirmation
+
+- ## Testing User Login
+
+To test user login:
+1. Register a new account
+2. Open the confirmation email
+3. Click the confirmation link
+4. Log in using the confirmed email
+
 - Browse and search products
 - Searching an empty bar
 
