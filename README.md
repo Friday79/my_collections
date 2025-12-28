@@ -220,6 +220,11 @@ MyCollection provides:
 
 ## 📸 Screenshots
 
+- ## General
+- The website has been designed from a mobile first perspective.
+
+- Responsive design across all device sizes.
+
 - Home Page
 - ![image](https://github.com/user-attachments/assets/5eb821da-d9d6-453d-a6ea-55671820b91f)
 
@@ -369,6 +374,9 @@ The database model has been designed using drawsql. The type of database being u
 - ![image](https://github.com/user-attachments/assets/124726d3-ae09-4f7d-ab0d-a73d99ce2405)
 
 - [Back To Top](#top)
+
+- ## Categories images
+- categories images was taking from Code institute walk through project.
 
 
 
